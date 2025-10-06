@@ -1,0 +1,5378 @@
+{
+  "0": [
+    "Boston Bruins",
+    "Buffalo Sabres"
+  ],
+  "1": [
+    "Boston Bruins",
+    "Buffalo Sabres"
+  ],
+  "2": [
+    "Boston Bruins",
+    "Detroit Red Wings"
+  ],
+  "3": [
+    "Boston Bruins",
+    "Detroit Red Wings"
+  ],
+  "4": [
+    "Boston Bruins",
+    "Florida Panthers"
+  ],
+  "5": [
+    "Boston Bruins",
+    "Florida Panthers"
+  ],
+  "6": [
+    "Boston Bruins",
+    "Montreal Canadiens"
+  ],
+  "7": [
+    "Boston Bruins",
+    "Montreal Canadiens"
+  ],
+  "8": [
+    "Boston Bruins",
+    "Ottawa Senators"
+  ],
+  "9": [
+    "Boston Bruins",
+    "Ottawa Senators"
+  ],
+  "10": [
+    "Boston Bruins",
+    "Tampa Bay Lightning"
+  ],
+  "11": [
+    "Boston Bruins",
+    "Tampa Bay Lightning"
+  ],
+  "12": [
+    "Boston Bruins",
+    "Toronto Maple Leafs"
+  ],
+  "13": [
+    "Boston Bruins",
+    "Toronto Maple Leafs"
+  ],
+  "14": [
+    "Boston Bruins",
+    "Carolina Hurricanes"
+  ],
+  "15": [
+    "Boston Bruins",
+    "Carolina Hurricanes"
+  ],
+  "16": [
+    "Boston Bruins",
+    "Columbus Blue Jackets"
+  ],
+  "17": [
+    "Boston Bruins",
+    "Columbus Blue Jackets"
+  ],
+  "18": [
+    "Boston Bruins",
+    "New Jersey Devils"
+  ],
+  "19": [
+    "Boston Bruins",
+    "New Jersey Devils"
+  ],
+  "20": [
+    "Boston Bruins",
+    "New York Islanders"
+  ],
+  "21": [
+    "Boston Bruins",
+    "New York Islanders"
+  ],
+  "22": [
+    "Boston Bruins",
+    "New York Rangers"
+  ],
+  "23": [
+    "Boston Bruins",
+    "Philadelphia Flyers"
+  ],
+  "24": [
+    "Boston Bruins",
+    "Pittsburgh Penguins"
+  ],
+  "25": [
+    "Boston Bruins",
+    "Washington Capitals"
+  ],
+  "26": [
+    "Boston Bruins",
+    "Chicago Blackhawks"
+  ],
+  "27": [
+    "Boston Bruins",
+    "Colorado Avalanche"
+  ],
+  "28": [
+    "Boston Bruins",
+    "Dallas Stars"
+  ],
+  "29": [
+    "Boston Bruins",
+    "Minnesota Wild"
+  ],
+  "30": [
+    "Boston Bruins",
+    "Nashville Predators"
+  ],
+  "31": [
+    "Boston Bruins",
+    "St. Louis Blues"
+  ],
+  "32": [
+    "Boston Bruins",
+    "Utah Mammoth"
+  ],
+  "33": [
+    "Boston Bruins",
+    "Winnipeg Jets"
+  ],
+  "34": [
+    "Boston Bruins",
+    "Anaheim Ducks"
+  ],
+  "35": [
+    "Boston Bruins",
+    "Calgary Flames"
+  ],
+  "36": [
+    "Boston Bruins",
+    "Edmonton Oilers"
+  ],
+  "37": [
+    "Boston Bruins",
+    "Los Angeles Kings"
+  ],
+  "38": [
+    "Boston Bruins",
+    "San Jose Sharks"
+  ],
+  "39": [
+    "Boston Bruins",
+    "Seattle Kraken"
+  ],
+  "40": [
+    "Boston Bruins",
+    "Vancouver Canucks"
+  ],
+  "41": [
+    "Boston Bruins",
+    "Vegas Golden Knights"
+  ],
+  "42": [
+    "Buffalo Sabres",
+    "Boston Bruins"
+  ],
+  "43": [
+    "Buffalo Sabres",
+    "Boston Bruins"
+  ],
+  "44": [
+    "Buffalo Sabres",
+    "Detroit Red Wings"
+  ],
+  "45": [
+    "Buffalo Sabres",
+    "Detroit Red Wings"
+  ],
+  "46": [
+    "Buffalo Sabres",
+    "Florida Panthers"
+  ],
+  "47": [
+    "Buffalo Sabres",
+    "Florida Panthers"
+  ],
+  "48": [
+    "Buffalo Sabres",
+    "Montreal Canadiens"
+  ],
+  "49": [
+    "Buffalo Sabres",
+    "Montreal Canadiens"
+  ],
+  "50": [
+    "Buffalo Sabres",
+    "Ottawa Senators"
+  ],
+  "51": [
+    "Buffalo Sabres",
+    "Ottawa Senators"
+  ],
+  "52": [
+    "Buffalo Sabres",
+    "Tampa Bay Lightning"
+  ],
+  "53": [
+    "Buffalo Sabres",
+    "Tampa Bay Lightning"
+  ],
+  "54": [
+    "Buffalo Sabres",
+    "Toronto Maple Leafs"
+  ],
+  "55": [
+    "Buffalo Sabres",
+    "Toronto Maple Leafs"
+  ],
+  "56": [
+    "Buffalo Sabres",
+    "Carolina Hurricanes"
+  ],
+  "57": [
+    "Buffalo Sabres",
+    "Carolina Hurricanes"
+  ],
+  "58": [
+    "Buffalo Sabres",
+    "Columbus Blue Jackets"
+  ],
+  "59": [
+    "Buffalo Sabres",
+    "Columbus Blue Jackets"
+  ],
+  "60": [
+    "Buffalo Sabres",
+    "New Jersey Devils"
+  ],
+  "61": [
+    "Buffalo Sabres",
+    "New Jersey Devils"
+  ],
+  "62": [
+    "Buffalo Sabres",
+    "New York Islanders"
+  ],
+  "63": [
+    "Buffalo Sabres",
+    "New York Islanders"
+  ],
+  "64": [
+    "Buffalo Sabres",
+    "New York Rangers"
+  ],
+  "65": [
+    "Buffalo Sabres",
+    "Philadelphia Flyers"
+  ],
+  "66": [
+    "Buffalo Sabres",
+    "Pittsburgh Penguins"
+  ],
+  "67": [
+    "Buffalo Sabres",
+    "Washington Capitals"
+  ],
+  "68": [
+    "Buffalo Sabres",
+    "Chicago Blackhawks"
+  ],
+  "69": [
+    "Buffalo Sabres",
+    "Colorado Avalanche"
+  ],
+  "70": [
+    "Buffalo Sabres",
+    "Dallas Stars"
+  ],
+  "71": [
+    "Buffalo Sabres",
+    "Minnesota Wild"
+  ],
+  "72": [
+    "Buffalo Sabres",
+    "Nashville Predators"
+  ],
+  "73": [
+    "Buffalo Sabres",
+    "St. Louis Blues"
+  ],
+  "74": [
+    "Buffalo Sabres",
+    "Utah Mammoth"
+  ],
+  "75": [
+    "Buffalo Sabres",
+    "Winnipeg Jets"
+  ],
+  "76": [
+    "Buffalo Sabres",
+    "Anaheim Ducks"
+  ],
+  "77": [
+    "Buffalo Sabres",
+    "Calgary Flames"
+  ],
+  "78": [
+    "Buffalo Sabres",
+    "Edmonton Oilers"
+  ],
+  "79": [
+    "Buffalo Sabres",
+    "Los Angeles Kings"
+  ],
+  "80": [
+    "Buffalo Sabres",
+    "San Jose Sharks"
+  ],
+  "81": [
+    "Buffalo Sabres",
+    "Seattle Kraken"
+  ],
+  "82": [
+    "Buffalo Sabres",
+    "Vancouver Canucks"
+  ],
+  "83": [
+    "Buffalo Sabres",
+    "Vegas Golden Knights"
+  ],
+  "84": [
+    "Detroit Red Wings",
+    "Boston Bruins"
+  ],
+  "85": [
+    "Detroit Red Wings",
+    "Boston Bruins"
+  ],
+  "86": [
+    "Detroit Red Wings",
+    "Buffalo Sabres"
+  ],
+  "87": [
+    "Detroit Red Wings",
+    "Buffalo Sabres"
+  ],
+  "88": [
+    "Detroit Red Wings",
+    "Florida Panthers"
+  ],
+  "89": [
+    "Detroit Red Wings",
+    "Florida Panthers"
+  ],
+  "90": [
+    "Detroit Red Wings",
+    "Montreal Canadiens"
+  ],
+  "91": [
+    "Detroit Red Wings",
+    "Montreal Canadiens"
+  ],
+  "92": [
+    "Detroit Red Wings",
+    "Ottawa Senators"
+  ],
+  "93": [
+    "Detroit Red Wings",
+    "Ottawa Senators"
+  ],
+  "94": [
+    "Detroit Red Wings",
+    "Tampa Bay Lightning"
+  ],
+  "95": [
+    "Detroit Red Wings",
+    "Tampa Bay Lightning"
+  ],
+  "96": [
+    "Detroit Red Wings",
+    "Toronto Maple Leafs"
+  ],
+  "97": [
+    "Detroit Red Wings",
+    "Toronto Maple Leafs"
+  ],
+  "98": [
+    "Detroit Red Wings",
+    "Carolina Hurricanes"
+  ],
+  "99": [
+    "Detroit Red Wings",
+    "Carolina Hurricanes"
+  ],
+  "100": [
+    "Detroit Red Wings",
+    "Columbus Blue Jackets"
+  ],
+  "101": [
+    "Detroit Red Wings",
+    "Columbus Blue Jackets"
+  ],
+  "102": [
+    "Detroit Red Wings",
+    "New Jersey Devils"
+  ],
+  "103": [
+    "Detroit Red Wings",
+    "New Jersey Devils"
+  ],
+  "104": [
+    "Detroit Red Wings",
+    "New York Islanders"
+  ],
+  "105": [
+    "Detroit Red Wings",
+    "New York Islanders"
+  ],
+  "106": [
+    "Detroit Red Wings",
+    "New York Rangers"
+  ],
+  "107": [
+    "Detroit Red Wings",
+    "Philadelphia Flyers"
+  ],
+  "108": [
+    "Detroit Red Wings",
+    "Pittsburgh Penguins"
+  ],
+  "109": [
+    "Detroit Red Wings",
+    "Washington Capitals"
+  ],
+  "110": [
+    "Detroit Red Wings",
+    "Chicago Blackhawks"
+  ],
+  "111": [
+    "Detroit Red Wings",
+    "Colorado Avalanche"
+  ],
+  "112": [
+    "Detroit Red Wings",
+    "Dallas Stars"
+  ],
+  "113": [
+    "Detroit Red Wings",
+    "Minnesota Wild"
+  ],
+  "114": [
+    "Detroit Red Wings",
+    "Nashville Predators"
+  ],
+  "115": [
+    "Detroit Red Wings",
+    "St. Louis Blues"
+  ],
+  "116": [
+    "Detroit Red Wings",
+    "Utah Mammoth"
+  ],
+  "117": [
+    "Detroit Red Wings",
+    "Winnipeg Jets"
+  ],
+  "118": [
+    "Detroit Red Wings",
+    "Anaheim Ducks"
+  ],
+  "119": [
+    "Detroit Red Wings",
+    "Calgary Flames"
+  ],
+  "120": [
+    "Detroit Red Wings",
+    "Edmonton Oilers"
+  ],
+  "121": [
+    "Detroit Red Wings",
+    "Los Angeles Kings"
+  ],
+  "122": [
+    "Detroit Red Wings",
+    "San Jose Sharks"
+  ],
+  "123": [
+    "Detroit Red Wings",
+    "Seattle Kraken"
+  ],
+  "124": [
+    "Detroit Red Wings",
+    "Vancouver Canucks"
+  ],
+  "125": [
+    "Detroit Red Wings",
+    "Vegas Golden Knights"
+  ],
+  "126": [
+    "Florida Panthers",
+    "Boston Bruins"
+  ],
+  "127": [
+    "Florida Panthers",
+    "Boston Bruins"
+  ],
+  "128": [
+    "Florida Panthers",
+    "Buffalo Sabres"
+  ],
+  "129": [
+    "Florida Panthers",
+    "Buffalo Sabres"
+  ],
+  "130": [
+    "Florida Panthers",
+    "Detroit Red Wings"
+  ],
+  "131": [
+    "Florida Panthers",
+    "Detroit Red Wings"
+  ],
+  "132": [
+    "Florida Panthers",
+    "Montreal Canadiens"
+  ],
+  "133": [
+    "Florida Panthers",
+    "Montreal Canadiens"
+  ],
+  "134": [
+    "Florida Panthers",
+    "Ottawa Senators"
+  ],
+  "135": [
+    "Florida Panthers",
+    "Ottawa Senators"
+  ],
+  "136": [
+    "Florida Panthers",
+    "Tampa Bay Lightning"
+  ],
+  "137": [
+    "Florida Panthers",
+    "Tampa Bay Lightning"
+  ],
+  "138": [
+    "Florida Panthers",
+    "Toronto Maple Leafs"
+  ],
+  "139": [
+    "Florida Panthers",
+    "Toronto Maple Leafs"
+  ],
+  "140": [
+    "Florida Panthers",
+    "Carolina Hurricanes"
+  ],
+  "141": [
+    "Florida Panthers",
+    "Carolina Hurricanes"
+  ],
+  "142": [
+    "Florida Panthers",
+    "Columbus Blue Jackets"
+  ],
+  "143": [
+    "Florida Panthers",
+    "Columbus Blue Jackets"
+  ],
+  "144": [
+    "Florida Panthers",
+    "New Jersey Devils"
+  ],
+  "145": [
+    "Florida Panthers",
+    "New Jersey Devils"
+  ],
+  "146": [
+    "Florida Panthers",
+    "New York Islanders"
+  ],
+  "147": [
+    "Florida Panthers",
+    "New York Islanders"
+  ],
+  "148": [
+    "Florida Panthers",
+    "New York Rangers"
+  ],
+  "149": [
+    "Florida Panthers",
+    "Philadelphia Flyers"
+  ],
+  "150": [
+    "Florida Panthers",
+    "Pittsburgh Penguins"
+  ],
+  "151": [
+    "Florida Panthers",
+    "Washington Capitals"
+  ],
+  "152": [
+    "Florida Panthers",
+    "Chicago Blackhawks"
+  ],
+  "153": [
+    "Florida Panthers",
+    "Colorado Avalanche"
+  ],
+  "154": [
+    "Florida Panthers",
+    "Dallas Stars"
+  ],
+  "155": [
+    "Florida Panthers",
+    "Minnesota Wild"
+  ],
+  "156": [
+    "Florida Panthers",
+    "Nashville Predators"
+  ],
+  "157": [
+    "Florida Panthers",
+    "St. Louis Blues"
+  ],
+  "158": [
+    "Florida Panthers",
+    "Utah Mammoth"
+  ],
+  "159": [
+    "Florida Panthers",
+    "Winnipeg Jets"
+  ],
+  "160": [
+    "Florida Panthers",
+    "Anaheim Ducks"
+  ],
+  "161": [
+    "Florida Panthers",
+    "Calgary Flames"
+  ],
+  "162": [
+    "Florida Panthers",
+    "Edmonton Oilers"
+  ],
+  "163": [
+    "Florida Panthers",
+    "Los Angeles Kings"
+  ],
+  "164": [
+    "Florida Panthers",
+    "San Jose Sharks"
+  ],
+  "165": [
+    "Florida Panthers",
+    "Seattle Kraken"
+  ],
+  "166": [
+    "Florida Panthers",
+    "Vancouver Canucks"
+  ],
+  "167": [
+    "Florida Panthers",
+    "Vegas Golden Knights"
+  ],
+  "168": [
+    "Montreal Canadiens",
+    "Boston Bruins"
+  ],
+  "169": [
+    "Montreal Canadiens",
+    "Boston Bruins"
+  ],
+  "170": [
+    "Montreal Canadiens",
+    "Buffalo Sabres"
+  ],
+  "171": [
+    "Montreal Canadiens",
+    "Buffalo Sabres"
+  ],
+  "172": [
+    "Montreal Canadiens",
+    "Detroit Red Wings"
+  ],
+  "173": [
+    "Montreal Canadiens",
+    "Detroit Red Wings"
+  ],
+  "174": [
+    "Montreal Canadiens",
+    "Florida Panthers"
+  ],
+  "175": [
+    "Montreal Canadiens",
+    "Florida Panthers"
+  ],
+  "176": [
+    "Montreal Canadiens",
+    "Ottawa Senators"
+  ],
+  "177": [
+    "Montreal Canadiens",
+    "Ottawa Senators"
+  ],
+  "178": [
+    "Montreal Canadiens",
+    "Tampa Bay Lightning"
+  ],
+  "179": [
+    "Montreal Canadiens",
+    "Tampa Bay Lightning"
+  ],
+  "180": [
+    "Montreal Canadiens",
+    "Toronto Maple Leafs"
+  ],
+  "181": [
+    "Montreal Canadiens",
+    "Toronto Maple Leafs"
+  ],
+  "182": [
+    "Montreal Canadiens",
+    "Carolina Hurricanes"
+  ],
+  "183": [
+    "Montreal Canadiens",
+    "Carolina Hurricanes"
+  ],
+  "184": [
+    "Montreal Canadiens",
+    "Columbus Blue Jackets"
+  ],
+  "185": [
+    "Montreal Canadiens",
+    "Columbus Blue Jackets"
+  ],
+  "186": [
+    "Montreal Canadiens",
+    "New Jersey Devils"
+  ],
+  "187": [
+    "Montreal Canadiens",
+    "New Jersey Devils"
+  ],
+  "188": [
+    "Montreal Canadiens",
+    "New York Islanders"
+  ],
+  "189": [
+    "Montreal Canadiens",
+    "New York Islanders"
+  ],
+  "190": [
+    "Montreal Canadiens",
+    "New York Rangers"
+  ],
+  "191": [
+    "Montreal Canadiens",
+    "Philadelphia Flyers"
+  ],
+  "192": [
+    "Montreal Canadiens",
+    "Pittsburgh Penguins"
+  ],
+  "193": [
+    "Montreal Canadiens",
+    "Washington Capitals"
+  ],
+  "194": [
+    "Montreal Canadiens",
+    "Chicago Blackhawks"
+  ],
+  "195": [
+    "Montreal Canadiens",
+    "Colorado Avalanche"
+  ],
+  "196": [
+    "Montreal Canadiens",
+    "Dallas Stars"
+  ],
+  "197": [
+    "Montreal Canadiens",
+    "Minnesota Wild"
+  ],
+  "198": [
+    "Montreal Canadiens",
+    "Nashville Predators"
+  ],
+  "199": [
+    "Montreal Canadiens",
+    "St. Louis Blues"
+  ],
+  "200": [
+    "Montreal Canadiens",
+    "Utah Mammoth"
+  ],
+  "201": [
+    "Montreal Canadiens",
+    "Winnipeg Jets"
+  ],
+  "202": [
+    "Montreal Canadiens",
+    "Anaheim Ducks"
+  ],
+  "203": [
+    "Montreal Canadiens",
+    "Calgary Flames"
+  ],
+  "204": [
+    "Montreal Canadiens",
+    "Edmonton Oilers"
+  ],
+  "205": [
+    "Montreal Canadiens",
+    "Los Angeles Kings"
+  ],
+  "206": [
+    "Montreal Canadiens",
+    "San Jose Sharks"
+  ],
+  "207": [
+    "Montreal Canadiens",
+    "Seattle Kraken"
+  ],
+  "208": [
+    "Montreal Canadiens",
+    "Vancouver Canucks"
+  ],
+  "209": [
+    "Montreal Canadiens",
+    "Vegas Golden Knights"
+  ],
+  "210": [
+    "Ottawa Senators",
+    "Boston Bruins"
+  ],
+  "211": [
+    "Ottawa Senators",
+    "Boston Bruins"
+  ],
+  "212": [
+    "Ottawa Senators",
+    "Buffalo Sabres"
+  ],
+  "213": [
+    "Ottawa Senators",
+    "Buffalo Sabres"
+  ],
+  "214": [
+    "Ottawa Senators",
+    "Detroit Red Wings"
+  ],
+  "215": [
+    "Ottawa Senators",
+    "Detroit Red Wings"
+  ],
+  "216": [
+    "Ottawa Senators",
+    "Florida Panthers"
+  ],
+  "217": [
+    "Ottawa Senators",
+    "Florida Panthers"
+  ],
+  "218": [
+    "Ottawa Senators",
+    "Montreal Canadiens"
+  ],
+  "219": [
+    "Ottawa Senators",
+    "Montreal Canadiens"
+  ],
+  "220": [
+    "Ottawa Senators",
+    "Tampa Bay Lightning"
+  ],
+  "221": [
+    "Ottawa Senators",
+    "Tampa Bay Lightning"
+  ],
+  "222": [
+    "Ottawa Senators",
+    "Toronto Maple Leafs"
+  ],
+  "223": [
+    "Ottawa Senators",
+    "Toronto Maple Leafs"
+  ],
+  "224": [
+    "Ottawa Senators",
+    "Carolina Hurricanes"
+  ],
+  "225": [
+    "Ottawa Senators",
+    "Carolina Hurricanes"
+  ],
+  "226": [
+    "Ottawa Senators",
+    "Columbus Blue Jackets"
+  ],
+  "227": [
+    "Ottawa Senators",
+    "Columbus Blue Jackets"
+  ],
+  "228": [
+    "Ottawa Senators",
+    "New Jersey Devils"
+  ],
+  "229": [
+    "Ottawa Senators",
+    "New Jersey Devils"
+  ],
+  "230": [
+    "Ottawa Senators",
+    "New York Islanders"
+  ],
+  "231": [
+    "Ottawa Senators",
+    "New York Islanders"
+  ],
+  "232": [
+    "Ottawa Senators",
+    "New York Rangers"
+  ],
+  "233": [
+    "Ottawa Senators",
+    "Philadelphia Flyers"
+  ],
+  "234": [
+    "Ottawa Senators",
+    "Pittsburgh Penguins"
+  ],
+  "235": [
+    "Ottawa Senators",
+    "Washington Capitals"
+  ],
+  "236": [
+    "Ottawa Senators",
+    "Chicago Blackhawks"
+  ],
+  "237": [
+    "Ottawa Senators",
+    "Colorado Avalanche"
+  ],
+  "238": [
+    "Ottawa Senators",
+    "Dallas Stars"
+  ],
+  "239": [
+    "Ottawa Senators",
+    "Minnesota Wild"
+  ],
+  "240": [
+    "Ottawa Senators",
+    "Nashville Predators"
+  ],
+  "241": [
+    "Ottawa Senators",
+    "St. Louis Blues"
+  ],
+  "242": [
+    "Ottawa Senators",
+    "Utah Mammoth"
+  ],
+  "243": [
+    "Ottawa Senators",
+    "Winnipeg Jets"
+  ],
+  "244": [
+    "Ottawa Senators",
+    "Anaheim Ducks"
+  ],
+  "245": [
+    "Ottawa Senators",
+    "Calgary Flames"
+  ],
+  "246": [
+    "Ottawa Senators",
+    "Edmonton Oilers"
+  ],
+  "247": [
+    "Ottawa Senators",
+    "Los Angeles Kings"
+  ],
+  "248": [
+    "Ottawa Senators",
+    "San Jose Sharks"
+  ],
+  "249": [
+    "Ottawa Senators",
+    "Seattle Kraken"
+  ],
+  "250": [
+    "Ottawa Senators",
+    "Vancouver Canucks"
+  ],
+  "251": [
+    "Ottawa Senators",
+    "Vegas Golden Knights"
+  ],
+  "252": [
+    "Tampa Bay Lightning",
+    "Boston Bruins"
+  ],
+  "253": [
+    "Tampa Bay Lightning",
+    "Boston Bruins"
+  ],
+  "254": [
+    "Tampa Bay Lightning",
+    "Buffalo Sabres"
+  ],
+  "255": [
+    "Tampa Bay Lightning",
+    "Buffalo Sabres"
+  ],
+  "256": [
+    "Tampa Bay Lightning",
+    "Detroit Red Wings"
+  ],
+  "257": [
+    "Tampa Bay Lightning",
+    "Detroit Red Wings"
+  ],
+  "258": [
+    "Tampa Bay Lightning",
+    "Florida Panthers"
+  ],
+  "259": [
+    "Tampa Bay Lightning",
+    "Florida Panthers"
+  ],
+  "260": [
+    "Tampa Bay Lightning",
+    "Montreal Canadiens"
+  ],
+  "261": [
+    "Tampa Bay Lightning",
+    "Montreal Canadiens"
+  ],
+  "262": [
+    "Tampa Bay Lightning",
+    "Ottawa Senators"
+  ],
+  "263": [
+    "Tampa Bay Lightning",
+    "Ottawa Senators"
+  ],
+  "264": [
+    "Tampa Bay Lightning",
+    "Toronto Maple Leafs"
+  ],
+  "265": [
+    "Tampa Bay Lightning",
+    "Toronto Maple Leafs"
+  ],
+  "266": [
+    "Tampa Bay Lightning",
+    "Carolina Hurricanes"
+  ],
+  "267": [
+    "Tampa Bay Lightning",
+    "Carolina Hurricanes"
+  ],
+  "268": [
+    "Tampa Bay Lightning",
+    "Columbus Blue Jackets"
+  ],
+  "269": [
+    "Tampa Bay Lightning",
+    "Columbus Blue Jackets"
+  ],
+  "270": [
+    "Tampa Bay Lightning",
+    "New Jersey Devils"
+  ],
+  "271": [
+    "Tampa Bay Lightning",
+    "New Jersey Devils"
+  ],
+  "272": [
+    "Tampa Bay Lightning",
+    "New York Islanders"
+  ],
+  "273": [
+    "Tampa Bay Lightning",
+    "New York Islanders"
+  ],
+  "274": [
+    "Tampa Bay Lightning",
+    "New York Rangers"
+  ],
+  "275": [
+    "Tampa Bay Lightning",
+    "Philadelphia Flyers"
+  ],
+  "276": [
+    "Tampa Bay Lightning",
+    "Pittsburgh Penguins"
+  ],
+  "277": [
+    "Tampa Bay Lightning",
+    "Washington Capitals"
+  ],
+  "278": [
+    "Tampa Bay Lightning",
+    "Chicago Blackhawks"
+  ],
+  "279": [
+    "Tampa Bay Lightning",
+    "Colorado Avalanche"
+  ],
+  "280": [
+    "Tampa Bay Lightning",
+    "Dallas Stars"
+  ],
+  "281": [
+    "Tampa Bay Lightning",
+    "Minnesota Wild"
+  ],
+  "282": [
+    "Tampa Bay Lightning",
+    "Nashville Predators"
+  ],
+  "283": [
+    "Tampa Bay Lightning",
+    "St. Louis Blues"
+  ],
+  "284": [
+    "Tampa Bay Lightning",
+    "Utah Mammoth"
+  ],
+  "285": [
+    "Tampa Bay Lightning",
+    "Winnipeg Jets"
+  ],
+  "286": [
+    "Tampa Bay Lightning",
+    "Anaheim Ducks"
+  ],
+  "287": [
+    "Tampa Bay Lightning",
+    "Calgary Flames"
+  ],
+  "288": [
+    "Tampa Bay Lightning",
+    "Edmonton Oilers"
+  ],
+  "289": [
+    "Tampa Bay Lightning",
+    "Los Angeles Kings"
+  ],
+  "290": [
+    "Tampa Bay Lightning",
+    "San Jose Sharks"
+  ],
+  "291": [
+    "Tampa Bay Lightning",
+    "Seattle Kraken"
+  ],
+  "292": [
+    "Tampa Bay Lightning",
+    "Vancouver Canucks"
+  ],
+  "293": [
+    "Tampa Bay Lightning",
+    "Vegas Golden Knights"
+  ],
+  "294": [
+    "Toronto Maple Leafs",
+    "Boston Bruins"
+  ],
+  "295": [
+    "Toronto Maple Leafs",
+    "Boston Bruins"
+  ],
+  "296": [
+    "Toronto Maple Leafs",
+    "Buffalo Sabres"
+  ],
+  "297": [
+    "Toronto Maple Leafs",
+    "Buffalo Sabres"
+  ],
+  "298": [
+    "Toronto Maple Leafs",
+    "Detroit Red Wings"
+  ],
+  "299": [
+    "Toronto Maple Leafs",
+    "Detroit Red Wings"
+  ],
+  "300": [
+    "Toronto Maple Leafs",
+    "Florida Panthers"
+  ],
+  "301": [
+    "Toronto Maple Leafs",
+    "Florida Panthers"
+  ],
+  "302": [
+    "Toronto Maple Leafs",
+    "Montreal Canadiens"
+  ],
+  "303": [
+    "Toronto Maple Leafs",
+    "Montreal Canadiens"
+  ],
+  "304": [
+    "Toronto Maple Leafs",
+    "Ottawa Senators"
+  ],
+  "305": [
+    "Toronto Maple Leafs",
+    "Ottawa Senators"
+  ],
+  "306": [
+    "Toronto Maple Leafs",
+    "Tampa Bay Lightning"
+  ],
+  "307": [
+    "Toronto Maple Leafs",
+    "Tampa Bay Lightning"
+  ],
+  "308": [
+    "Toronto Maple Leafs",
+    "Carolina Hurricanes"
+  ],
+  "309": [
+    "Toronto Maple Leafs",
+    "Carolina Hurricanes"
+  ],
+  "310": [
+    "Toronto Maple Leafs",
+    "Columbus Blue Jackets"
+  ],
+  "311": [
+    "Toronto Maple Leafs",
+    "Columbus Blue Jackets"
+  ],
+  "312": [
+    "Toronto Maple Leafs",
+    "New Jersey Devils"
+  ],
+  "313": [
+    "Toronto Maple Leafs",
+    "New Jersey Devils"
+  ],
+  "314": [
+    "Toronto Maple Leafs",
+    "New York Islanders"
+  ],
+  "315": [
+    "Toronto Maple Leafs",
+    "New York Islanders"
+  ],
+  "316": [
+    "Toronto Maple Leafs",
+    "New York Rangers"
+  ],
+  "317": [
+    "Toronto Maple Leafs",
+    "Philadelphia Flyers"
+  ],
+  "318": [
+    "Toronto Maple Leafs",
+    "Pittsburgh Penguins"
+  ],
+  "319": [
+    "Toronto Maple Leafs",
+    "Washington Capitals"
+  ],
+  "320": [
+    "Toronto Maple Leafs",
+    "Chicago Blackhawks"
+  ],
+  "321": [
+    "Toronto Maple Leafs",
+    "Colorado Avalanche"
+  ],
+  "322": [
+    "Toronto Maple Leafs",
+    "Dallas Stars"
+  ],
+  "323": [
+    "Toronto Maple Leafs",
+    "Minnesota Wild"
+  ],
+  "324": [
+    "Toronto Maple Leafs",
+    "Nashville Predators"
+  ],
+  "325": [
+    "Toronto Maple Leafs",
+    "St. Louis Blues"
+  ],
+  "326": [
+    "Toronto Maple Leafs",
+    "Utah Mammoth"
+  ],
+  "327": [
+    "Toronto Maple Leafs",
+    "Winnipeg Jets"
+  ],
+  "328": [
+    "Toronto Maple Leafs",
+    "Anaheim Ducks"
+  ],
+  "329": [
+    "Toronto Maple Leafs",
+    "Calgary Flames"
+  ],
+  "330": [
+    "Toronto Maple Leafs",
+    "Edmonton Oilers"
+  ],
+  "331": [
+    "Toronto Maple Leafs",
+    "Los Angeles Kings"
+  ],
+  "332": [
+    "Toronto Maple Leafs",
+    "San Jose Sharks"
+  ],
+  "333": [
+    "Toronto Maple Leafs",
+    "Seattle Kraken"
+  ],
+  "334": [
+    "Toronto Maple Leafs",
+    "Vancouver Canucks"
+  ],
+  "335": [
+    "Toronto Maple Leafs",
+    "Vegas Golden Knights"
+  ],
+  "336": [
+    "Carolina Hurricanes",
+    "Columbus Blue Jackets"
+  ],
+  "337": [
+    "Carolina Hurricanes",
+    "Columbus Blue Jackets"
+  ],
+  "338": [
+    "Carolina Hurricanes",
+    "New Jersey Devils"
+  ],
+  "339": [
+    "Carolina Hurricanes",
+    "New Jersey Devils"
+  ],
+  "340": [
+    "Carolina Hurricanes",
+    "New York Islanders"
+  ],
+  "341": [
+    "Carolina Hurricanes",
+    "New York Islanders"
+  ],
+  "342": [
+    "Carolina Hurricanes",
+    "New York Rangers"
+  ],
+  "343": [
+    "Carolina Hurricanes",
+    "New York Rangers"
+  ],
+  "344": [
+    "Carolina Hurricanes",
+    "Philadelphia Flyers"
+  ],
+  "345": [
+    "Carolina Hurricanes",
+    "Philadelphia Flyers"
+  ],
+  "346": [
+    "Carolina Hurricanes",
+    "Pittsburgh Penguins"
+  ],
+  "347": [
+    "Carolina Hurricanes",
+    "Pittsburgh Penguins"
+  ],
+  "348": [
+    "Carolina Hurricanes",
+    "Washington Capitals"
+  ],
+  "349": [
+    "Carolina Hurricanes",
+    "Washington Capitals"
+  ],
+  "350": [
+    "Carolina Hurricanes",
+    "Boston Bruins"
+  ],
+  "351": [
+    "Carolina Hurricanes",
+    "Boston Bruins"
+  ],
+  "352": [
+    "Carolina Hurricanes",
+    "Buffalo Sabres"
+  ],
+  "353": [
+    "Carolina Hurricanes",
+    "Buffalo Sabres"
+  ],
+  "354": [
+    "Carolina Hurricanes",
+    "Detroit Red Wings"
+  ],
+  "355": [
+    "Carolina Hurricanes",
+    "Detroit Red Wings"
+  ],
+  "356": [
+    "Carolina Hurricanes",
+    "Florida Panthers"
+  ],
+  "357": [
+    "Carolina Hurricanes",
+    "Florida Panthers"
+  ],
+  "358": [
+    "Carolina Hurricanes",
+    "Montreal Canadiens"
+  ],
+  "359": [
+    "Carolina Hurricanes",
+    "Ottawa Senators"
+  ],
+  "360": [
+    "Carolina Hurricanes",
+    "Tampa Bay Lightning"
+  ],
+  "361": [
+    "Carolina Hurricanes",
+    "Toronto Maple Leafs"
+  ],
+  "362": [
+    "Carolina Hurricanes",
+    "Chicago Blackhawks"
+  ],
+  "363": [
+    "Carolina Hurricanes",
+    "Colorado Avalanche"
+  ],
+  "364": [
+    "Carolina Hurricanes",
+    "Dallas Stars"
+  ],
+  "365": [
+    "Carolina Hurricanes",
+    "Minnesota Wild"
+  ],
+  "366": [
+    "Carolina Hurricanes",
+    "Nashville Predators"
+  ],
+  "367": [
+    "Carolina Hurricanes",
+    "St. Louis Blues"
+  ],
+  "368": [
+    "Carolina Hurricanes",
+    "Utah Mammoth"
+  ],
+  "369": [
+    "Carolina Hurricanes",
+    "Winnipeg Jets"
+  ],
+  "370": [
+    "Carolina Hurricanes",
+    "Anaheim Ducks"
+  ],
+  "371": [
+    "Carolina Hurricanes",
+    "Calgary Flames"
+  ],
+  "372": [
+    "Carolina Hurricanes",
+    "Edmonton Oilers"
+  ],
+  "373": [
+    "Carolina Hurricanes",
+    "Los Angeles Kings"
+  ],
+  "374": [
+    "Carolina Hurricanes",
+    "San Jose Sharks"
+  ],
+  "375": [
+    "Carolina Hurricanes",
+    "Seattle Kraken"
+  ],
+  "376": [
+    "Carolina Hurricanes",
+    "Vancouver Canucks"
+  ],
+  "377": [
+    "Carolina Hurricanes",
+    "Vegas Golden Knights"
+  ],
+  "378": [
+    "Columbus Blue Jackets",
+    "Carolina Hurricanes"
+  ],
+  "379": [
+    "Columbus Blue Jackets",
+    "Carolina Hurricanes"
+  ],
+  "380": [
+    "Columbus Blue Jackets",
+    "New Jersey Devils"
+  ],
+  "381": [
+    "Columbus Blue Jackets",
+    "New Jersey Devils"
+  ],
+  "382": [
+    "Columbus Blue Jackets",
+    "New York Islanders"
+  ],
+  "383": [
+    "Columbus Blue Jackets",
+    "New York Islanders"
+  ],
+  "384": [
+    "Columbus Blue Jackets",
+    "New York Rangers"
+  ],
+  "385": [
+    "Columbus Blue Jackets",
+    "New York Rangers"
+  ],
+  "386": [
+    "Columbus Blue Jackets",
+    "Philadelphia Flyers"
+  ],
+  "387": [
+    "Columbus Blue Jackets",
+    "Philadelphia Flyers"
+  ],
+  "388": [
+    "Columbus Blue Jackets",
+    "Pittsburgh Penguins"
+  ],
+  "389": [
+    "Columbus Blue Jackets",
+    "Pittsburgh Penguins"
+  ],
+  "390": [
+    "Columbus Blue Jackets",
+    "Washington Capitals"
+  ],
+  "391": [
+    "Columbus Blue Jackets",
+    "Washington Capitals"
+  ],
+  "392": [
+    "Columbus Blue Jackets",
+    "Boston Bruins"
+  ],
+  "393": [
+    "Columbus Blue Jackets",
+    "Boston Bruins"
+  ],
+  "394": [
+    "Columbus Blue Jackets",
+    "Buffalo Sabres"
+  ],
+  "395": [
+    "Columbus Blue Jackets",
+    "Buffalo Sabres"
+  ],
+  "396": [
+    "Columbus Blue Jackets",
+    "Detroit Red Wings"
+  ],
+  "397": [
+    "Columbus Blue Jackets",
+    "Detroit Red Wings"
+  ],
+  "398": [
+    "Columbus Blue Jackets",
+    "Florida Panthers"
+  ],
+  "399": [
+    "Columbus Blue Jackets",
+    "Florida Panthers"
+  ],
+  "400": [
+    "Columbus Blue Jackets",
+    "Montreal Canadiens"
+  ],
+  "401": [
+    "Columbus Blue Jackets",
+    "Ottawa Senators"
+  ],
+  "402": [
+    "Columbus Blue Jackets",
+    "Tampa Bay Lightning"
+  ],
+  "403": [
+    "Columbus Blue Jackets",
+    "Toronto Maple Leafs"
+  ],
+  "404": [
+    "Columbus Blue Jackets",
+    "Chicago Blackhawks"
+  ],
+  "405": [
+    "Columbus Blue Jackets",
+    "Colorado Avalanche"
+  ],
+  "406": [
+    "Columbus Blue Jackets",
+    "Dallas Stars"
+  ],
+  "407": [
+    "Columbus Blue Jackets",
+    "Minnesota Wild"
+  ],
+  "408": [
+    "Columbus Blue Jackets",
+    "Nashville Predators"
+  ],
+  "409": [
+    "Columbus Blue Jackets",
+    "St. Louis Blues"
+  ],
+  "410": [
+    "Columbus Blue Jackets",
+    "Utah Mammoth"
+  ],
+  "411": [
+    "Columbus Blue Jackets",
+    "Winnipeg Jets"
+  ],
+  "412": [
+    "Columbus Blue Jackets",
+    "Anaheim Ducks"
+  ],
+  "413": [
+    "Columbus Blue Jackets",
+    "Calgary Flames"
+  ],
+  "414": [
+    "Columbus Blue Jackets",
+    "Edmonton Oilers"
+  ],
+  "415": [
+    "Columbus Blue Jackets",
+    "Los Angeles Kings"
+  ],
+  "416": [
+    "Columbus Blue Jackets",
+    "San Jose Sharks"
+  ],
+  "417": [
+    "Columbus Blue Jackets",
+    "Seattle Kraken"
+  ],
+  "418": [
+    "Columbus Blue Jackets",
+    "Vancouver Canucks"
+  ],
+  "419": [
+    "Columbus Blue Jackets",
+    "Vegas Golden Knights"
+  ],
+  "420": [
+    "New Jersey Devils",
+    "Carolina Hurricanes"
+  ],
+  "421": [
+    "New Jersey Devils",
+    "Carolina Hurricanes"
+  ],
+  "422": [
+    "New Jersey Devils",
+    "Columbus Blue Jackets"
+  ],
+  "423": [
+    "New Jersey Devils",
+    "Columbus Blue Jackets"
+  ],
+  "424": [
+    "New Jersey Devils",
+    "New York Islanders"
+  ],
+  "425": [
+    "New Jersey Devils",
+    "New York Islanders"
+  ],
+  "426": [
+    "New Jersey Devils",
+    "New York Rangers"
+  ],
+  "427": [
+    "New Jersey Devils",
+    "New York Rangers"
+  ],
+  "428": [
+    "New Jersey Devils",
+    "Philadelphia Flyers"
+  ],
+  "429": [
+    "New Jersey Devils",
+    "Philadelphia Flyers"
+  ],
+  "430": [
+    "New Jersey Devils",
+    "Pittsburgh Penguins"
+  ],
+  "431": [
+    "New Jersey Devils",
+    "Pittsburgh Penguins"
+  ],
+  "432": [
+    "New Jersey Devils",
+    "Washington Capitals"
+  ],
+  "433": [
+    "New Jersey Devils",
+    "Washington Capitals"
+  ],
+  "434": [
+    "New Jersey Devils",
+    "Boston Bruins"
+  ],
+  "435": [
+    "New Jersey Devils",
+    "Boston Bruins"
+  ],
+  "436": [
+    "New Jersey Devils",
+    "Buffalo Sabres"
+  ],
+  "437": [
+    "New Jersey Devils",
+    "Buffalo Sabres"
+  ],
+  "438": [
+    "New Jersey Devils",
+    "Detroit Red Wings"
+  ],
+  "439": [
+    "New Jersey Devils",
+    "Detroit Red Wings"
+  ],
+  "440": [
+    "New Jersey Devils",
+    "Florida Panthers"
+  ],
+  "441": [
+    "New Jersey Devils",
+    "Florida Panthers"
+  ],
+  "442": [
+    "New Jersey Devils",
+    "Montreal Canadiens"
+  ],
+  "443": [
+    "New Jersey Devils",
+    "Ottawa Senators"
+  ],
+  "444": [
+    "New Jersey Devils",
+    "Tampa Bay Lightning"
+  ],
+  "445": [
+    "New Jersey Devils",
+    "Toronto Maple Leafs"
+  ],
+  "446": [
+    "New Jersey Devils",
+    "Chicago Blackhawks"
+  ],
+  "447": [
+    "New Jersey Devils",
+    "Colorado Avalanche"
+  ],
+  "448": [
+    "New Jersey Devils",
+    "Dallas Stars"
+  ],
+  "449": [
+    "New Jersey Devils",
+    "Minnesota Wild"
+  ],
+  "450": [
+    "New Jersey Devils",
+    "Nashville Predators"
+  ],
+  "451": [
+    "New Jersey Devils",
+    "St. Louis Blues"
+  ],
+  "452": [
+    "New Jersey Devils",
+    "Utah Mammoth"
+  ],
+  "453": [
+    "New Jersey Devils",
+    "Winnipeg Jets"
+  ],
+  "454": [
+    "New Jersey Devils",
+    "Anaheim Ducks"
+  ],
+  "455": [
+    "New Jersey Devils",
+    "Calgary Flames"
+  ],
+  "456": [
+    "New Jersey Devils",
+    "Edmonton Oilers"
+  ],
+  "457": [
+    "New Jersey Devils",
+    "Los Angeles Kings"
+  ],
+  "458": [
+    "New Jersey Devils",
+    "San Jose Sharks"
+  ],
+  "459": [
+    "New Jersey Devils",
+    "Seattle Kraken"
+  ],
+  "460": [
+    "New Jersey Devils",
+    "Vancouver Canucks"
+  ],
+  "461": [
+    "New Jersey Devils",
+    "Vegas Golden Knights"
+  ],
+  "462": [
+    "New York Islanders",
+    "Carolina Hurricanes"
+  ],
+  "463": [
+    "New York Islanders",
+    "Carolina Hurricanes"
+  ],
+  "464": [
+    "New York Islanders",
+    "Columbus Blue Jackets"
+  ],
+  "465": [
+    "New York Islanders",
+    "Columbus Blue Jackets"
+  ],
+  "466": [
+    "New York Islanders",
+    "New Jersey Devils"
+  ],
+  "467": [
+    "New York Islanders",
+    "New Jersey Devils"
+  ],
+  "468": [
+    "New York Islanders",
+    "New York Rangers"
+  ],
+  "469": [
+    "New York Islanders",
+    "New York Rangers"
+  ],
+  "470": [
+    "New York Islanders",
+    "Philadelphia Flyers"
+  ],
+  "471": [
+    "New York Islanders",
+    "Philadelphia Flyers"
+  ],
+  "472": [
+    "New York Islanders",
+    "Pittsburgh Penguins"
+  ],
+  "473": [
+    "New York Islanders",
+    "Pittsburgh Penguins"
+  ],
+  "474": [
+    "New York Islanders",
+    "Washington Capitals"
+  ],
+  "475": [
+    "New York Islanders",
+    "Washington Capitals"
+  ],
+  "476": [
+    "New York Islanders",
+    "Boston Bruins"
+  ],
+  "477": [
+    "New York Islanders",
+    "Boston Bruins"
+  ],
+  "478": [
+    "New York Islanders",
+    "Buffalo Sabres"
+  ],
+  "479": [
+    "New York Islanders",
+    "Buffalo Sabres"
+  ],
+  "480": [
+    "New York Islanders",
+    "Detroit Red Wings"
+  ],
+  "481": [
+    "New York Islanders",
+    "Detroit Red Wings"
+  ],
+  "482": [
+    "New York Islanders",
+    "Florida Panthers"
+  ],
+  "483": [
+    "New York Islanders",
+    "Florida Panthers"
+  ],
+  "484": [
+    "New York Islanders",
+    "Montreal Canadiens"
+  ],
+  "485": [
+    "New York Islanders",
+    "Ottawa Senators"
+  ],
+  "486": [
+    "New York Islanders",
+    "Tampa Bay Lightning"
+  ],
+  "487": [
+    "New York Islanders",
+    "Toronto Maple Leafs"
+  ],
+  "488": [
+    "New York Islanders",
+    "Chicago Blackhawks"
+  ],
+  "489": [
+    "New York Islanders",
+    "Colorado Avalanche"
+  ],
+  "490": [
+    "New York Islanders",
+    "Dallas Stars"
+  ],
+  "491": [
+    "New York Islanders",
+    "Minnesota Wild"
+  ],
+  "492": [
+    "New York Islanders",
+    "Nashville Predators"
+  ],
+  "493": [
+    "New York Islanders",
+    "St. Louis Blues"
+  ],
+  "494": [
+    "New York Islanders",
+    "Utah Mammoth"
+  ],
+  "495": [
+    "New York Islanders",
+    "Winnipeg Jets"
+  ],
+  "496": [
+    "New York Islanders",
+    "Anaheim Ducks"
+  ],
+  "497": [
+    "New York Islanders",
+    "Calgary Flames"
+  ],
+  "498": [
+    "New York Islanders",
+    "Edmonton Oilers"
+  ],
+  "499": [
+    "New York Islanders",
+    "Los Angeles Kings"
+  ],
+  "500": [
+    "New York Islanders",
+    "San Jose Sharks"
+  ],
+  "501": [
+    "New York Islanders",
+    "Seattle Kraken"
+  ],
+  "502": [
+    "New York Islanders",
+    "Vancouver Canucks"
+  ],
+  "503": [
+    "New York Islanders",
+    "Vegas Golden Knights"
+  ],
+  "504": [
+    "New York Rangers",
+    "Carolina Hurricanes"
+  ],
+  "505": [
+    "New York Rangers",
+    "Carolina Hurricanes"
+  ],
+  "506": [
+    "New York Rangers",
+    "Columbus Blue Jackets"
+  ],
+  "507": [
+    "New York Rangers",
+    "Columbus Blue Jackets"
+  ],
+  "508": [
+    "New York Rangers",
+    "New Jersey Devils"
+  ],
+  "509": [
+    "New York Rangers",
+    "New Jersey Devils"
+  ],
+  "510": [
+    "New York Rangers",
+    "New York Islanders"
+  ],
+  "511": [
+    "New York Rangers",
+    "New York Islanders"
+  ],
+  "512": [
+    "New York Rangers",
+    "Philadelphia Flyers"
+  ],
+  "513": [
+    "New York Rangers",
+    "Philadelphia Flyers"
+  ],
+  "514": [
+    "New York Rangers",
+    "Pittsburgh Penguins"
+  ],
+  "515": [
+    "New York Rangers",
+    "Pittsburgh Penguins"
+  ],
+  "516": [
+    "New York Rangers",
+    "Washington Capitals"
+  ],
+  "517": [
+    "New York Rangers",
+    "Washington Capitals"
+  ],
+  "518": [
+    "New York Rangers",
+    "Boston Bruins"
+  ],
+  "519": [
+    "New York Rangers",
+    "Boston Bruins"
+  ],
+  "520": [
+    "New York Rangers",
+    "Buffalo Sabres"
+  ],
+  "521": [
+    "New York Rangers",
+    "Buffalo Sabres"
+  ],
+  "522": [
+    "New York Rangers",
+    "Detroit Red Wings"
+  ],
+  "523": [
+    "New York Rangers",
+    "Detroit Red Wings"
+  ],
+  "524": [
+    "New York Rangers",
+    "Florida Panthers"
+  ],
+  "525": [
+    "New York Rangers",
+    "Florida Panthers"
+  ],
+  "526": [
+    "New York Rangers",
+    "Montreal Canadiens"
+  ],
+  "527": [
+    "New York Rangers",
+    "Ottawa Senators"
+  ],
+  "528": [
+    "New York Rangers",
+    "Tampa Bay Lightning"
+  ],
+  "529": [
+    "New York Rangers",
+    "Toronto Maple Leafs"
+  ],
+  "530": [
+    "New York Rangers",
+    "Chicago Blackhawks"
+  ],
+  "531": [
+    "New York Rangers",
+    "Colorado Avalanche"
+  ],
+  "532": [
+    "New York Rangers",
+    "Dallas Stars"
+  ],
+  "533": [
+    "New York Rangers",
+    "Minnesota Wild"
+  ],
+  "534": [
+    "New York Rangers",
+    "Nashville Predators"
+  ],
+  "535": [
+    "New York Rangers",
+    "St. Louis Blues"
+  ],
+  "536": [
+    "New York Rangers",
+    "Utah Mammoth"
+  ],
+  "537": [
+    "New York Rangers",
+    "Winnipeg Jets"
+  ],
+  "538": [
+    "New York Rangers",
+    "Anaheim Ducks"
+  ],
+  "539": [
+    "New York Rangers",
+    "Calgary Flames"
+  ],
+  "540": [
+    "New York Rangers",
+    "Edmonton Oilers"
+  ],
+  "541": [
+    "New York Rangers",
+    "Los Angeles Kings"
+  ],
+  "542": [
+    "New York Rangers",
+    "San Jose Sharks"
+  ],
+  "543": [
+    "New York Rangers",
+    "Seattle Kraken"
+  ],
+  "544": [
+    "New York Rangers",
+    "Vancouver Canucks"
+  ],
+  "545": [
+    "New York Rangers",
+    "Vegas Golden Knights"
+  ],
+  "546": [
+    "Philadelphia Flyers",
+    "Carolina Hurricanes"
+  ],
+  "547": [
+    "Philadelphia Flyers",
+    "Carolina Hurricanes"
+  ],
+  "548": [
+    "Philadelphia Flyers",
+    "Columbus Blue Jackets"
+  ],
+  "549": [
+    "Philadelphia Flyers",
+    "Columbus Blue Jackets"
+  ],
+  "550": [
+    "Philadelphia Flyers",
+    "New Jersey Devils"
+  ],
+  "551": [
+    "Philadelphia Flyers",
+    "New Jersey Devils"
+  ],
+  "552": [
+    "Philadelphia Flyers",
+    "New York Islanders"
+  ],
+  "553": [
+    "Philadelphia Flyers",
+    "New York Islanders"
+  ],
+  "554": [
+    "Philadelphia Flyers",
+    "New York Rangers"
+  ],
+  "555": [
+    "Philadelphia Flyers",
+    "New York Rangers"
+  ],
+  "556": [
+    "Philadelphia Flyers",
+    "Pittsburgh Penguins"
+  ],
+  "557": [
+    "Philadelphia Flyers",
+    "Pittsburgh Penguins"
+  ],
+  "558": [
+    "Philadelphia Flyers",
+    "Washington Capitals"
+  ],
+  "559": [
+    "Philadelphia Flyers",
+    "Washington Capitals"
+  ],
+  "560": [
+    "Philadelphia Flyers",
+    "Boston Bruins"
+  ],
+  "561": [
+    "Philadelphia Flyers",
+    "Boston Bruins"
+  ],
+  "562": [
+    "Philadelphia Flyers",
+    "Buffalo Sabres"
+  ],
+  "563": [
+    "Philadelphia Flyers",
+    "Buffalo Sabres"
+  ],
+  "564": [
+    "Philadelphia Flyers",
+    "Detroit Red Wings"
+  ],
+  "565": [
+    "Philadelphia Flyers",
+    "Detroit Red Wings"
+  ],
+  "566": [
+    "Philadelphia Flyers",
+    "Florida Panthers"
+  ],
+  "567": [
+    "Philadelphia Flyers",
+    "Florida Panthers"
+  ],
+  "568": [
+    "Philadelphia Flyers",
+    "Montreal Canadiens"
+  ],
+  "569": [
+    "Philadelphia Flyers",
+    "Ottawa Senators"
+  ],
+  "570": [
+    "Philadelphia Flyers",
+    "Tampa Bay Lightning"
+  ],
+  "571": [
+    "Philadelphia Flyers",
+    "Toronto Maple Leafs"
+  ],
+  "572": [
+    "Philadelphia Flyers",
+    "Chicago Blackhawks"
+  ],
+  "573": [
+    "Philadelphia Flyers",
+    "Colorado Avalanche"
+  ],
+  "574": [
+    "Philadelphia Flyers",
+    "Dallas Stars"
+  ],
+  "575": [
+    "Philadelphia Flyers",
+    "Minnesota Wild"
+  ],
+  "576": [
+    "Philadelphia Flyers",
+    "Nashville Predators"
+  ],
+  "577": [
+    "Philadelphia Flyers",
+    "St. Louis Blues"
+  ],
+  "578": [
+    "Philadelphia Flyers",
+    "Utah Mammoth"
+  ],
+  "579": [
+    "Philadelphia Flyers",
+    "Winnipeg Jets"
+  ],
+  "580": [
+    "Philadelphia Flyers",
+    "Anaheim Ducks"
+  ],
+  "581": [
+    "Philadelphia Flyers",
+    "Calgary Flames"
+  ],
+  "582": [
+    "Philadelphia Flyers",
+    "Edmonton Oilers"
+  ],
+  "583": [
+    "Philadelphia Flyers",
+    "Los Angeles Kings"
+  ],
+  "584": [
+    "Philadelphia Flyers",
+    "San Jose Sharks"
+  ],
+  "585": [
+    "Philadelphia Flyers",
+    "Seattle Kraken"
+  ],
+  "586": [
+    "Philadelphia Flyers",
+    "Vancouver Canucks"
+  ],
+  "587": [
+    "Philadelphia Flyers",
+    "Vegas Golden Knights"
+  ],
+  "588": [
+    "Pittsburgh Penguins",
+    "Carolina Hurricanes"
+  ],
+  "589": [
+    "Pittsburgh Penguins",
+    "Carolina Hurricanes"
+  ],
+  "590": [
+    "Pittsburgh Penguins",
+    "Columbus Blue Jackets"
+  ],
+  "591": [
+    "Pittsburgh Penguins",
+    "Columbus Blue Jackets"
+  ],
+  "592": [
+    "Pittsburgh Penguins",
+    "New Jersey Devils"
+  ],
+  "593": [
+    "Pittsburgh Penguins",
+    "New Jersey Devils"
+  ],
+  "594": [
+    "Pittsburgh Penguins",
+    "New York Islanders"
+  ],
+  "595": [
+    "Pittsburgh Penguins",
+    "New York Islanders"
+  ],
+  "596": [
+    "Pittsburgh Penguins",
+    "New York Rangers"
+  ],
+  "597": [
+    "Pittsburgh Penguins",
+    "New York Rangers"
+  ],
+  "598": [
+    "Pittsburgh Penguins",
+    "Philadelphia Flyers"
+  ],
+  "599": [
+    "Pittsburgh Penguins",
+    "Philadelphia Flyers"
+  ],
+  "600": [
+    "Pittsburgh Penguins",
+    "Washington Capitals"
+  ],
+  "601": [
+    "Pittsburgh Penguins",
+    "Washington Capitals"
+  ],
+  "602": [
+    "Pittsburgh Penguins",
+    "Boston Bruins"
+  ],
+  "603": [
+    "Pittsburgh Penguins",
+    "Boston Bruins"
+  ],
+  "604": [
+    "Pittsburgh Penguins",
+    "Buffalo Sabres"
+  ],
+  "605": [
+    "Pittsburgh Penguins",
+    "Buffalo Sabres"
+  ],
+  "606": [
+    "Pittsburgh Penguins",
+    "Detroit Red Wings"
+  ],
+  "607": [
+    "Pittsburgh Penguins",
+    "Detroit Red Wings"
+  ],
+  "608": [
+    "Pittsburgh Penguins",
+    "Florida Panthers"
+  ],
+  "609": [
+    "Pittsburgh Penguins",
+    "Florida Panthers"
+  ],
+  "610": [
+    "Pittsburgh Penguins",
+    "Montreal Canadiens"
+  ],
+  "611": [
+    "Pittsburgh Penguins",
+    "Ottawa Senators"
+  ],
+  "612": [
+    "Pittsburgh Penguins",
+    "Tampa Bay Lightning"
+  ],
+  "613": [
+    "Pittsburgh Penguins",
+    "Toronto Maple Leafs"
+  ],
+  "614": [
+    "Pittsburgh Penguins",
+    "Chicago Blackhawks"
+  ],
+  "615": [
+    "Pittsburgh Penguins",
+    "Colorado Avalanche"
+  ],
+  "616": [
+    "Pittsburgh Penguins",
+    "Dallas Stars"
+  ],
+  "617": [
+    "Pittsburgh Penguins",
+    "Minnesota Wild"
+  ],
+  "618": [
+    "Pittsburgh Penguins",
+    "Nashville Predators"
+  ],
+  "619": [
+    "Pittsburgh Penguins",
+    "St. Louis Blues"
+  ],
+  "620": [
+    "Pittsburgh Penguins",
+    "Utah Mammoth"
+  ],
+  "621": [
+    "Pittsburgh Penguins",
+    "Winnipeg Jets"
+  ],
+  "622": [
+    "Pittsburgh Penguins",
+    "Anaheim Ducks"
+  ],
+  "623": [
+    "Pittsburgh Penguins",
+    "Calgary Flames"
+  ],
+  "624": [
+    "Pittsburgh Penguins",
+    "Edmonton Oilers"
+  ],
+  "625": [
+    "Pittsburgh Penguins",
+    "Los Angeles Kings"
+  ],
+  "626": [
+    "Pittsburgh Penguins",
+    "San Jose Sharks"
+  ],
+  "627": [
+    "Pittsburgh Penguins",
+    "Seattle Kraken"
+  ],
+  "628": [
+    "Pittsburgh Penguins",
+    "Vancouver Canucks"
+  ],
+  "629": [
+    "Pittsburgh Penguins",
+    "Vegas Golden Knights"
+  ],
+  "630": [
+    "Washington Capitals",
+    "Carolina Hurricanes"
+  ],
+  "631": [
+    "Washington Capitals",
+    "Carolina Hurricanes"
+  ],
+  "632": [
+    "Washington Capitals",
+    "Columbus Blue Jackets"
+  ],
+  "633": [
+    "Washington Capitals",
+    "Columbus Blue Jackets"
+  ],
+  "634": [
+    "Washington Capitals",
+    "New Jersey Devils"
+  ],
+  "635": [
+    "Washington Capitals",
+    "New Jersey Devils"
+  ],
+  "636": [
+    "Washington Capitals",
+    "New York Islanders"
+  ],
+  "637": [
+    "Washington Capitals",
+    "New York Islanders"
+  ],
+  "638": [
+    "Washington Capitals",
+    "New York Rangers"
+  ],
+  "639": [
+    "Washington Capitals",
+    "New York Rangers"
+  ],
+  "640": [
+    "Washington Capitals",
+    "Philadelphia Flyers"
+  ],
+  "641": [
+    "Washington Capitals",
+    "Philadelphia Flyers"
+  ],
+  "642": [
+    "Washington Capitals",
+    "Pittsburgh Penguins"
+  ],
+  "643": [
+    "Washington Capitals",
+    "Pittsburgh Penguins"
+  ],
+  "644": [
+    "Washington Capitals",
+    "Boston Bruins"
+  ],
+  "645": [
+    "Washington Capitals",
+    "Boston Bruins"
+  ],
+  "646": [
+    "Washington Capitals",
+    "Buffalo Sabres"
+  ],
+  "647": [
+    "Washington Capitals",
+    "Buffalo Sabres"
+  ],
+  "648": [
+    "Washington Capitals",
+    "Detroit Red Wings"
+  ],
+  "649": [
+    "Washington Capitals",
+    "Detroit Red Wings"
+  ],
+  "650": [
+    "Washington Capitals",
+    "Florida Panthers"
+  ],
+  "651": [
+    "Washington Capitals",
+    "Florida Panthers"
+  ],
+  "652": [
+    "Washington Capitals",
+    "Montreal Canadiens"
+  ],
+  "653": [
+    "Washington Capitals",
+    "Ottawa Senators"
+  ],
+  "654": [
+    "Washington Capitals",
+    "Tampa Bay Lightning"
+  ],
+  "655": [
+    "Washington Capitals",
+    "Toronto Maple Leafs"
+  ],
+  "656": [
+    "Washington Capitals",
+    "Chicago Blackhawks"
+  ],
+  "657": [
+    "Washington Capitals",
+    "Colorado Avalanche"
+  ],
+  "658": [
+    "Washington Capitals",
+    "Dallas Stars"
+  ],
+  "659": [
+    "Washington Capitals",
+    "Minnesota Wild"
+  ],
+  "660": [
+    "Washington Capitals",
+    "Nashville Predators"
+  ],
+  "661": [
+    "Washington Capitals",
+    "St. Louis Blues"
+  ],
+  "662": [
+    "Washington Capitals",
+    "Utah Mammoth"
+  ],
+  "663": [
+    "Washington Capitals",
+    "Winnipeg Jets"
+  ],
+  "664": [
+    "Washington Capitals",
+    "Anaheim Ducks"
+  ],
+  "665": [
+    "Washington Capitals",
+    "Calgary Flames"
+  ],
+  "666": [
+    "Washington Capitals",
+    "Edmonton Oilers"
+  ],
+  "667": [
+    "Washington Capitals",
+    "Los Angeles Kings"
+  ],
+  "668": [
+    "Washington Capitals",
+    "San Jose Sharks"
+  ],
+  "669": [
+    "Washington Capitals",
+    "Seattle Kraken"
+  ],
+  "670": [
+    "Washington Capitals",
+    "Vancouver Canucks"
+  ],
+  "671": [
+    "Washington Capitals",
+    "Vegas Golden Knights"
+  ],
+  "672": [
+    "Chicago Blackhawks",
+    "Colorado Avalanche"
+  ],
+  "673": [
+    "Chicago Blackhawks",
+    "Colorado Avalanche"
+  ],
+  "674": [
+    "Chicago Blackhawks",
+    "Dallas Stars"
+  ],
+  "675": [
+    "Chicago Blackhawks",
+    "Dallas Stars"
+  ],
+  "676": [
+    "Chicago Blackhawks",
+    "Minnesota Wild"
+  ],
+  "677": [
+    "Chicago Blackhawks",
+    "Minnesota Wild"
+  ],
+  "678": [
+    "Chicago Blackhawks",
+    "Nashville Predators"
+  ],
+  "679": [
+    "Chicago Blackhawks",
+    "Nashville Predators"
+  ],
+  "680": [
+    "Chicago Blackhawks",
+    "St. Louis Blues"
+  ],
+  "681": [
+    "Chicago Blackhawks",
+    "St. Louis Blues"
+  ],
+  "682": [
+    "Chicago Blackhawks",
+    "Utah Mammoth"
+  ],
+  "683": [
+    "Chicago Blackhawks",
+    "Utah Mammoth"
+  ],
+  "684": [
+    "Chicago Blackhawks",
+    "Winnipeg Jets"
+  ],
+  "685": [
+    "Chicago Blackhawks",
+    "Winnipeg Jets"
+  ],
+  "686": [
+    "Chicago Blackhawks",
+    "Anaheim Ducks"
+  ],
+  "687": [
+    "Chicago Blackhawks",
+    "Anaheim Ducks"
+  ],
+  "688": [
+    "Chicago Blackhawks",
+    "Calgary Flames"
+  ],
+  "689": [
+    "Chicago Blackhawks",
+    "Calgary Flames"
+  ],
+  "690": [
+    "Chicago Blackhawks",
+    "Edmonton Oilers"
+  ],
+  "691": [
+    "Chicago Blackhawks",
+    "Edmonton Oilers"
+  ],
+  "692": [
+    "Chicago Blackhawks",
+    "Los Angeles Kings"
+  ],
+  "693": [
+    "Chicago Blackhawks",
+    "Los Angeles Kings"
+  ],
+  "694": [
+    "Chicago Blackhawks",
+    "San Jose Sharks"
+  ],
+  "695": [
+    "Chicago Blackhawks",
+    "Seattle Kraken"
+  ],
+  "696": [
+    "Chicago Blackhawks",
+    "Vancouver Canucks"
+  ],
+  "697": [
+    "Chicago Blackhawks",
+    "Vegas Golden Knights"
+  ],
+  "698": [
+    "Chicago Blackhawks",
+    "Boston Bruins"
+  ],
+  "699": [
+    "Chicago Blackhawks",
+    "Buffalo Sabres"
+  ],
+  "700": [
+    "Chicago Blackhawks",
+    "Detroit Red Wings"
+  ],
+  "701": [
+    "Chicago Blackhawks",
+    "Florida Panthers"
+  ],
+  "702": [
+    "Chicago Blackhawks",
+    "Montreal Canadiens"
+  ],
+  "703": [
+    "Chicago Blackhawks",
+    "Ottawa Senators"
+  ],
+  "704": [
+    "Chicago Blackhawks",
+    "Tampa Bay Lightning"
+  ],
+  "705": [
+    "Chicago Blackhawks",
+    "Toronto Maple Leafs"
+  ],
+  "706": [
+    "Chicago Blackhawks",
+    "Carolina Hurricanes"
+  ],
+  "707": [
+    "Chicago Blackhawks",
+    "Columbus Blue Jackets"
+  ],
+  "708": [
+    "Chicago Blackhawks",
+    "New Jersey Devils"
+  ],
+  "709": [
+    "Chicago Blackhawks",
+    "New York Islanders"
+  ],
+  "710": [
+    "Chicago Blackhawks",
+    "New York Rangers"
+  ],
+  "711": [
+    "Chicago Blackhawks",
+    "Philadelphia Flyers"
+  ],
+  "712": [
+    "Chicago Blackhawks",
+    "Pittsburgh Penguins"
+  ],
+  "713": [
+    "Chicago Blackhawks",
+    "Washington Capitals"
+  ],
+  "714": [
+    "Colorado Avalanche",
+    "Chicago Blackhawks"
+  ],
+  "715": [
+    "Colorado Avalanche",
+    "Chicago Blackhawks"
+  ],
+  "716": [
+    "Colorado Avalanche",
+    "Dallas Stars"
+  ],
+  "717": [
+    "Colorado Avalanche",
+    "Dallas Stars"
+  ],
+  "718": [
+    "Colorado Avalanche",
+    "Minnesota Wild"
+  ],
+  "719": [
+    "Colorado Avalanche",
+    "Minnesota Wild"
+  ],
+  "720": [
+    "Colorado Avalanche",
+    "Nashville Predators"
+  ],
+  "721": [
+    "Colorado Avalanche",
+    "Nashville Predators"
+  ],
+  "722": [
+    "Colorado Avalanche",
+    "St. Louis Blues"
+  ],
+  "723": [
+    "Colorado Avalanche",
+    "St. Louis Blues"
+  ],
+  "724": [
+    "Colorado Avalanche",
+    "Utah Mammoth"
+  ],
+  "725": [
+    "Colorado Avalanche",
+    "Utah Mammoth"
+  ],
+  "726": [
+    "Colorado Avalanche",
+    "Winnipeg Jets"
+  ],
+  "727": [
+    "Colorado Avalanche",
+    "Winnipeg Jets"
+  ],
+  "728": [
+    "Colorado Avalanche",
+    "Anaheim Ducks"
+  ],
+  "729": [
+    "Colorado Avalanche",
+    "Anaheim Ducks"
+  ],
+  "730": [
+    "Colorado Avalanche",
+    "Calgary Flames"
+  ],
+  "731": [
+    "Colorado Avalanche",
+    "Calgary Flames"
+  ],
+  "732": [
+    "Colorado Avalanche",
+    "Edmonton Oilers"
+  ],
+  "733": [
+    "Colorado Avalanche",
+    "Edmonton Oilers"
+  ],
+  "734": [
+    "Colorado Avalanche",
+    "Los Angeles Kings"
+  ],
+  "735": [
+    "Colorado Avalanche",
+    "Los Angeles Kings"
+  ],
+  "736": [
+    "Colorado Avalanche",
+    "San Jose Sharks"
+  ],
+  "737": [
+    "Colorado Avalanche",
+    "Seattle Kraken"
+  ],
+  "738": [
+    "Colorado Avalanche",
+    "Vancouver Canucks"
+  ],
+  "739": [
+    "Colorado Avalanche",
+    "Vegas Golden Knights"
+  ],
+  "740": [
+    "Colorado Avalanche",
+    "Boston Bruins"
+  ],
+  "741": [
+    "Colorado Avalanche",
+    "Buffalo Sabres"
+  ],
+  "742": [
+    "Colorado Avalanche",
+    "Detroit Red Wings"
+  ],
+  "743": [
+    "Colorado Avalanche",
+    "Florida Panthers"
+  ],
+  "744": [
+    "Colorado Avalanche",
+    "Montreal Canadiens"
+  ],
+  "745": [
+    "Colorado Avalanche",
+    "Ottawa Senators"
+  ],
+  "746": [
+    "Colorado Avalanche",
+    "Tampa Bay Lightning"
+  ],
+  "747": [
+    "Colorado Avalanche",
+    "Toronto Maple Leafs"
+  ],
+  "748": [
+    "Colorado Avalanche",
+    "Carolina Hurricanes"
+  ],
+  "749": [
+    "Colorado Avalanche",
+    "Columbus Blue Jackets"
+  ],
+  "750": [
+    "Colorado Avalanche",
+    "New Jersey Devils"
+  ],
+  "751": [
+    "Colorado Avalanche",
+    "New York Islanders"
+  ],
+  "752": [
+    "Colorado Avalanche",
+    "New York Rangers"
+  ],
+  "753": [
+    "Colorado Avalanche",
+    "Philadelphia Flyers"
+  ],
+  "754": [
+    "Colorado Avalanche",
+    "Pittsburgh Penguins"
+  ],
+  "755": [
+    "Colorado Avalanche",
+    "Washington Capitals"
+  ],
+  "756": [
+    "Dallas Stars",
+    "Chicago Blackhawks"
+  ],
+  "757": [
+    "Dallas Stars",
+    "Chicago Blackhawks"
+  ],
+  "758": [
+    "Dallas Stars",
+    "Colorado Avalanche"
+  ],
+  "759": [
+    "Dallas Stars",
+    "Colorado Avalanche"
+  ],
+  "760": [
+    "Dallas Stars",
+    "Minnesota Wild"
+  ],
+  "761": [
+    "Dallas Stars",
+    "Minnesota Wild"
+  ],
+  "762": [
+    "Dallas Stars",
+    "Nashville Predators"
+  ],
+  "763": [
+    "Dallas Stars",
+    "Nashville Predators"
+  ],
+  "764": [
+    "Dallas Stars",
+    "St. Louis Blues"
+  ],
+  "765": [
+    "Dallas Stars",
+    "St. Louis Blues"
+  ],
+  "766": [
+    "Dallas Stars",
+    "Utah Mammoth"
+  ],
+  "767": [
+    "Dallas Stars",
+    "Utah Mammoth"
+  ],
+  "768": [
+    "Dallas Stars",
+    "Winnipeg Jets"
+  ],
+  "769": [
+    "Dallas Stars",
+    "Winnipeg Jets"
+  ],
+  "770": [
+    "Dallas Stars",
+    "Anaheim Ducks"
+  ],
+  "771": [
+    "Dallas Stars",
+    "Anaheim Ducks"
+  ],
+  "772": [
+    "Dallas Stars",
+    "Calgary Flames"
+  ],
+  "773": [
+    "Dallas Stars",
+    "Calgary Flames"
+  ],
+  "774": [
+    "Dallas Stars",
+    "Edmonton Oilers"
+  ],
+  "775": [
+    "Dallas Stars",
+    "Edmonton Oilers"
+  ],
+  "776": [
+    "Dallas Stars",
+    "Los Angeles Kings"
+  ],
+  "777": [
+    "Dallas Stars",
+    "Los Angeles Kings"
+  ],
+  "778": [
+    "Dallas Stars",
+    "San Jose Sharks"
+  ],
+  "779": [
+    "Dallas Stars",
+    "Seattle Kraken"
+  ],
+  "780": [
+    "Dallas Stars",
+    "Vancouver Canucks"
+  ],
+  "781": [
+    "Dallas Stars",
+    "Vegas Golden Knights"
+  ],
+  "782": [
+    "Dallas Stars",
+    "Boston Bruins"
+  ],
+  "783": [
+    "Dallas Stars",
+    "Buffalo Sabres"
+  ],
+  "784": [
+    "Dallas Stars",
+    "Detroit Red Wings"
+  ],
+  "785": [
+    "Dallas Stars",
+    "Florida Panthers"
+  ],
+  "786": [
+    "Dallas Stars",
+    "Montreal Canadiens"
+  ],
+  "787": [
+    "Dallas Stars",
+    "Ottawa Senators"
+  ],
+  "788": [
+    "Dallas Stars",
+    "Tampa Bay Lightning"
+  ],
+  "789": [
+    "Dallas Stars",
+    "Toronto Maple Leafs"
+  ],
+  "790": [
+    "Dallas Stars",
+    "Carolina Hurricanes"
+  ],
+  "791": [
+    "Dallas Stars",
+    "Columbus Blue Jackets"
+  ],
+  "792": [
+    "Dallas Stars",
+    "New Jersey Devils"
+  ],
+  "793": [
+    "Dallas Stars",
+    "New York Islanders"
+  ],
+  "794": [
+    "Dallas Stars",
+    "New York Rangers"
+  ],
+  "795": [
+    "Dallas Stars",
+    "Philadelphia Flyers"
+  ],
+  "796": [
+    "Dallas Stars",
+    "Pittsburgh Penguins"
+  ],
+  "797": [
+    "Dallas Stars",
+    "Washington Capitals"
+  ],
+  "798": [
+    "Minnesota Wild",
+    "Chicago Blackhawks"
+  ],
+  "799": [
+    "Minnesota Wild",
+    "Chicago Blackhawks"
+  ],
+  "800": [
+    "Minnesota Wild",
+    "Colorado Avalanche"
+  ],
+  "801": [
+    "Minnesota Wild",
+    "Colorado Avalanche"
+  ],
+  "802": [
+    "Minnesota Wild",
+    "Dallas Stars"
+  ],
+  "803": [
+    "Minnesota Wild",
+    "Dallas Stars"
+  ],
+  "804": [
+    "Minnesota Wild",
+    "Nashville Predators"
+  ],
+  "805": [
+    "Minnesota Wild",
+    "Nashville Predators"
+  ],
+  "806": [
+    "Minnesota Wild",
+    "St. Louis Blues"
+  ],
+  "807": [
+    "Minnesota Wild",
+    "St. Louis Blues"
+  ],
+  "808": [
+    "Minnesota Wild",
+    "Utah Mammoth"
+  ],
+  "809": [
+    "Minnesota Wild",
+    "Utah Mammoth"
+  ],
+  "810": [
+    "Minnesota Wild",
+    "Winnipeg Jets"
+  ],
+  "811": [
+    "Minnesota Wild",
+    "Winnipeg Jets"
+  ],
+  "812": [
+    "Minnesota Wild",
+    "Anaheim Ducks"
+  ],
+  "813": [
+    "Minnesota Wild",
+    "Anaheim Ducks"
+  ],
+  "814": [
+    "Minnesota Wild",
+    "Calgary Flames"
+  ],
+  "815": [
+    "Minnesota Wild",
+    "Calgary Flames"
+  ],
+  "816": [
+    "Minnesota Wild",
+    "Edmonton Oilers"
+  ],
+  "817": [
+    "Minnesota Wild",
+    "Edmonton Oilers"
+  ],
+  "818": [
+    "Minnesota Wild",
+    "Los Angeles Kings"
+  ],
+  "819": [
+    "Minnesota Wild",
+    "Los Angeles Kings"
+  ],
+  "820": [
+    "Minnesota Wild",
+    "San Jose Sharks"
+  ],
+  "821": [
+    "Minnesota Wild",
+    "Seattle Kraken"
+  ],
+  "822": [
+    "Minnesota Wild",
+    "Vancouver Canucks"
+  ],
+  "823": [
+    "Minnesota Wild",
+    "Vegas Golden Knights"
+  ],
+  "824": [
+    "Minnesota Wild",
+    "Boston Bruins"
+  ],
+  "825": [
+    "Minnesota Wild",
+    "Buffalo Sabres"
+  ],
+  "826": [
+    "Minnesota Wild",
+    "Detroit Red Wings"
+  ],
+  "827": [
+    "Minnesota Wild",
+    "Florida Panthers"
+  ],
+  "828": [
+    "Minnesota Wild",
+    "Montreal Canadiens"
+  ],
+  "829": [
+    "Minnesota Wild",
+    "Ottawa Senators"
+  ],
+  "830": [
+    "Minnesota Wild",
+    "Tampa Bay Lightning"
+  ],
+  "831": [
+    "Minnesota Wild",
+    "Toronto Maple Leafs"
+  ],
+  "832": [
+    "Minnesota Wild",
+    "Carolina Hurricanes"
+  ],
+  "833": [
+    "Minnesota Wild",
+    "Columbus Blue Jackets"
+  ],
+  "834": [
+    "Minnesota Wild",
+    "New Jersey Devils"
+  ],
+  "835": [
+    "Minnesota Wild",
+    "New York Islanders"
+  ],
+  "836": [
+    "Minnesota Wild",
+    "New York Rangers"
+  ],
+  "837": [
+    "Minnesota Wild",
+    "Philadelphia Flyers"
+  ],
+  "838": [
+    "Minnesota Wild",
+    "Pittsburgh Penguins"
+  ],
+  "839": [
+    "Minnesota Wild",
+    "Washington Capitals"
+  ],
+  "840": [
+    "Nashville Predators",
+    "Chicago Blackhawks"
+  ],
+  "841": [
+    "Nashville Predators",
+    "Chicago Blackhawks"
+  ],
+  "842": [
+    "Nashville Predators",
+    "Colorado Avalanche"
+  ],
+  "843": [
+    "Nashville Predators",
+    "Colorado Avalanche"
+  ],
+  "844": [
+    "Nashville Predators",
+    "Dallas Stars"
+  ],
+  "845": [
+    "Nashville Predators",
+    "Dallas Stars"
+  ],
+  "846": [
+    "Nashville Predators",
+    "Minnesota Wild"
+  ],
+  "847": [
+    "Nashville Predators",
+    "Minnesota Wild"
+  ],
+  "848": [
+    "Nashville Predators",
+    "St. Louis Blues"
+  ],
+  "849": [
+    "Nashville Predators",
+    "St. Louis Blues"
+  ],
+  "850": [
+    "Nashville Predators",
+    "Utah Mammoth"
+  ],
+  "851": [
+    "Nashville Predators",
+    "Utah Mammoth"
+  ],
+  "852": [
+    "Nashville Predators",
+    "Winnipeg Jets"
+  ],
+  "853": [
+    "Nashville Predators",
+    "Winnipeg Jets"
+  ],
+  "854": [
+    "Nashville Predators",
+    "Anaheim Ducks"
+  ],
+  "855": [
+    "Nashville Predators",
+    "Anaheim Ducks"
+  ],
+  "856": [
+    "Nashville Predators",
+    "Calgary Flames"
+  ],
+  "857": [
+    "Nashville Predators",
+    "Calgary Flames"
+  ],
+  "858": [
+    "Nashville Predators",
+    "Edmonton Oilers"
+  ],
+  "859": [
+    "Nashville Predators",
+    "Edmonton Oilers"
+  ],
+  "860": [
+    "Nashville Predators",
+    "Los Angeles Kings"
+  ],
+  "861": [
+    "Nashville Predators",
+    "Los Angeles Kings"
+  ],
+  "862": [
+    "Nashville Predators",
+    "San Jose Sharks"
+  ],
+  "863": [
+    "Nashville Predators",
+    "Seattle Kraken"
+  ],
+  "864": [
+    "Nashville Predators",
+    "Vancouver Canucks"
+  ],
+  "865": [
+    "Nashville Predators",
+    "Vegas Golden Knights"
+  ],
+  "866": [
+    "Nashville Predators",
+    "Boston Bruins"
+  ],
+  "867": [
+    "Nashville Predators",
+    "Buffalo Sabres"
+  ],
+  "868": [
+    "Nashville Predators",
+    "Detroit Red Wings"
+  ],
+  "869": [
+    "Nashville Predators",
+    "Florida Panthers"
+  ],
+  "870": [
+    "Nashville Predators",
+    "Montreal Canadiens"
+  ],
+  "871": [
+    "Nashville Predators",
+    "Ottawa Senators"
+  ],
+  "872": [
+    "Nashville Predators",
+    "Tampa Bay Lightning"
+  ],
+  "873": [
+    "Nashville Predators",
+    "Toronto Maple Leafs"
+  ],
+  "874": [
+    "Nashville Predators",
+    "Carolina Hurricanes"
+  ],
+  "875": [
+    "Nashville Predators",
+    "Columbus Blue Jackets"
+  ],
+  "876": [
+    "Nashville Predators",
+    "New Jersey Devils"
+  ],
+  "877": [
+    "Nashville Predators",
+    "New York Islanders"
+  ],
+  "878": [
+    "Nashville Predators",
+    "New York Rangers"
+  ],
+  "879": [
+    "Nashville Predators",
+    "Philadelphia Flyers"
+  ],
+  "880": [
+    "Nashville Predators",
+    "Pittsburgh Penguins"
+  ],
+  "881": [
+    "Nashville Predators",
+    "Washington Capitals"
+  ],
+  "882": [
+    "St. Louis Blues",
+    "Chicago Blackhawks"
+  ],
+  "883": [
+    "St. Louis Blues",
+    "Chicago Blackhawks"
+  ],
+  "884": [
+    "St. Louis Blues",
+    "Colorado Avalanche"
+  ],
+  "885": [
+    "St. Louis Blues",
+    "Colorado Avalanche"
+  ],
+  "886": [
+    "St. Louis Blues",
+    "Dallas Stars"
+  ],
+  "887": [
+    "St. Louis Blues",
+    "Dallas Stars"
+  ],
+  "888": [
+    "St. Louis Blues",
+    "Minnesota Wild"
+  ],
+  "889": [
+    "St. Louis Blues",
+    "Minnesota Wild"
+  ],
+  "890": [
+    "St. Louis Blues",
+    "Nashville Predators"
+  ],
+  "891": [
+    "St. Louis Blues",
+    "Nashville Predators"
+  ],
+  "892": [
+    "St. Louis Blues",
+    "Utah Mammoth"
+  ],
+  "893": [
+    "St. Louis Blues",
+    "Utah Mammoth"
+  ],
+  "894": [
+    "St. Louis Blues",
+    "Winnipeg Jets"
+  ],
+  "895": [
+    "St. Louis Blues",
+    "Winnipeg Jets"
+  ],
+  "896": [
+    "St. Louis Blues",
+    "Anaheim Ducks"
+  ],
+  "897": [
+    "St. Louis Blues",
+    "Anaheim Ducks"
+  ],
+  "898": [
+    "St. Louis Blues",
+    "Calgary Flames"
+  ],
+  "899": [
+    "St. Louis Blues",
+    "Calgary Flames"
+  ],
+  "900": [
+    "St. Louis Blues",
+    "Edmonton Oilers"
+  ],
+  "901": [
+    "St. Louis Blues",
+    "Edmonton Oilers"
+  ],
+  "902": [
+    "St. Louis Blues",
+    "Los Angeles Kings"
+  ],
+  "903": [
+    "St. Louis Blues",
+    "Los Angeles Kings"
+  ],
+  "904": [
+    "St. Louis Blues",
+    "San Jose Sharks"
+  ],
+  "905": [
+    "St. Louis Blues",
+    "Seattle Kraken"
+  ],
+  "906": [
+    "St. Louis Blues",
+    "Vancouver Canucks"
+  ],
+  "907": [
+    "St. Louis Blues",
+    "Vegas Golden Knights"
+  ],
+  "908": [
+    "St. Louis Blues",
+    "Boston Bruins"
+  ],
+  "909": [
+    "St. Louis Blues",
+    "Buffalo Sabres"
+  ],
+  "910": [
+    "St. Louis Blues",
+    "Detroit Red Wings"
+  ],
+  "911": [
+    "St. Louis Blues",
+    "Florida Panthers"
+  ],
+  "912": [
+    "St. Louis Blues",
+    "Montreal Canadiens"
+  ],
+  "913": [
+    "St. Louis Blues",
+    "Ottawa Senators"
+  ],
+  "914": [
+    "St. Louis Blues",
+    "Tampa Bay Lightning"
+  ],
+  "915": [
+    "St. Louis Blues",
+    "Toronto Maple Leafs"
+  ],
+  "916": [
+    "St. Louis Blues",
+    "Carolina Hurricanes"
+  ],
+  "917": [
+    "St. Louis Blues",
+    "Columbus Blue Jackets"
+  ],
+  "918": [
+    "St. Louis Blues",
+    "New Jersey Devils"
+  ],
+  "919": [
+    "St. Louis Blues",
+    "New York Islanders"
+  ],
+  "920": [
+    "St. Louis Blues",
+    "New York Rangers"
+  ],
+  "921": [
+    "St. Louis Blues",
+    "Philadelphia Flyers"
+  ],
+  "922": [
+    "St. Louis Blues",
+    "Pittsburgh Penguins"
+  ],
+  "923": [
+    "St. Louis Blues",
+    "Washington Capitals"
+  ],
+  "924": [
+    "Utah Mammoth",
+    "Chicago Blackhawks"
+  ],
+  "925": [
+    "Utah Mammoth",
+    "Chicago Blackhawks"
+  ],
+  "926": [
+    "Utah Mammoth",
+    "Colorado Avalanche"
+  ],
+  "927": [
+    "Utah Mammoth",
+    "Colorado Avalanche"
+  ],
+  "928": [
+    "Utah Mammoth",
+    "Dallas Stars"
+  ],
+  "929": [
+    "Utah Mammoth",
+    "Dallas Stars"
+  ],
+  "930": [
+    "Utah Mammoth",
+    "Minnesota Wild"
+  ],
+  "931": [
+    "Utah Mammoth",
+    "Minnesota Wild"
+  ],
+  "932": [
+    "Utah Mammoth",
+    "Nashville Predators"
+  ],
+  "933": [
+    "Utah Mammoth",
+    "Nashville Predators"
+  ],
+  "934": [
+    "Utah Mammoth",
+    "St. Louis Blues"
+  ],
+  "935": [
+    "Utah Mammoth",
+    "St. Louis Blues"
+  ],
+  "936": [
+    "Utah Mammoth",
+    "Winnipeg Jets"
+  ],
+  "937": [
+    "Utah Mammoth",
+    "Winnipeg Jets"
+  ],
+  "938": [
+    "Utah Mammoth",
+    "Anaheim Ducks"
+  ],
+  "939": [
+    "Utah Mammoth",
+    "Anaheim Ducks"
+  ],
+  "940": [
+    "Utah Mammoth",
+    "Calgary Flames"
+  ],
+  "941": [
+    "Utah Mammoth",
+    "Calgary Flames"
+  ],
+  "942": [
+    "Utah Mammoth",
+    "Edmonton Oilers"
+  ],
+  "943": [
+    "Utah Mammoth",
+    "Edmonton Oilers"
+  ],
+  "944": [
+    "Utah Mammoth",
+    "Los Angeles Kings"
+  ],
+  "945": [
+    "Utah Mammoth",
+    "Los Angeles Kings"
+  ],
+  "946": [
+    "Utah Mammoth",
+    "San Jose Sharks"
+  ],
+  "947": [
+    "Utah Mammoth",
+    "Seattle Kraken"
+  ],
+  "948": [
+    "Utah Mammoth",
+    "Vancouver Canucks"
+  ],
+  "949": [
+    "Utah Mammoth",
+    "Vegas Golden Knights"
+  ],
+  "950": [
+    "Utah Mammoth",
+    "Boston Bruins"
+  ],
+  "951": [
+    "Utah Mammoth",
+    "Buffalo Sabres"
+  ],
+  "952": [
+    "Utah Mammoth",
+    "Detroit Red Wings"
+  ],
+  "953": [
+    "Utah Mammoth",
+    "Florida Panthers"
+  ],
+  "954": [
+    "Utah Mammoth",
+    "Montreal Canadiens"
+  ],
+  "955": [
+    "Utah Mammoth",
+    "Ottawa Senators"
+  ],
+  "956": [
+    "Utah Mammoth",
+    "Tampa Bay Lightning"
+  ],
+  "957": [
+    "Utah Mammoth",
+    "Toronto Maple Leafs"
+  ],
+  "958": [
+    "Utah Mammoth",
+    "Carolina Hurricanes"
+  ],
+  "959": [
+    "Utah Mammoth",
+    "Columbus Blue Jackets"
+  ],
+  "960": [
+    "Utah Mammoth",
+    "New Jersey Devils"
+  ],
+  "961": [
+    "Utah Mammoth",
+    "New York Islanders"
+  ],
+  "962": [
+    "Utah Mammoth",
+    "New York Rangers"
+  ],
+  "963": [
+    "Utah Mammoth",
+    "Philadelphia Flyers"
+  ],
+  "964": [
+    "Utah Mammoth",
+    "Pittsburgh Penguins"
+  ],
+  "965": [
+    "Utah Mammoth",
+    "Washington Capitals"
+  ],
+  "966": [
+    "Winnipeg Jets",
+    "Chicago Blackhawks"
+  ],
+  "967": [
+    "Winnipeg Jets",
+    "Chicago Blackhawks"
+  ],
+  "968": [
+    "Winnipeg Jets",
+    "Colorado Avalanche"
+  ],
+  "969": [
+    "Winnipeg Jets",
+    "Colorado Avalanche"
+  ],
+  "970": [
+    "Winnipeg Jets",
+    "Dallas Stars"
+  ],
+  "971": [
+    "Winnipeg Jets",
+    "Dallas Stars"
+  ],
+  "972": [
+    "Winnipeg Jets",
+    "Minnesota Wild"
+  ],
+  "973": [
+    "Winnipeg Jets",
+    "Minnesota Wild"
+  ],
+  "974": [
+    "Winnipeg Jets",
+    "Nashville Predators"
+  ],
+  "975": [
+    "Winnipeg Jets",
+    "Nashville Predators"
+  ],
+  "976": [
+    "Winnipeg Jets",
+    "St. Louis Blues"
+  ],
+  "977": [
+    "Winnipeg Jets",
+    "St. Louis Blues"
+  ],
+  "978": [
+    "Winnipeg Jets",
+    "Utah Mammoth"
+  ],
+  "979": [
+    "Winnipeg Jets",
+    "Utah Mammoth"
+  ],
+  "980": [
+    "Winnipeg Jets",
+    "Anaheim Ducks"
+  ],
+  "981": [
+    "Winnipeg Jets",
+    "Anaheim Ducks"
+  ],
+  "982": [
+    "Winnipeg Jets",
+    "Calgary Flames"
+  ],
+  "983": [
+    "Winnipeg Jets",
+    "Calgary Flames"
+  ],
+  "984": [
+    "Winnipeg Jets",
+    "Edmonton Oilers"
+  ],
+  "985": [
+    "Winnipeg Jets",
+    "Edmonton Oilers"
+  ],
+  "986": [
+    "Winnipeg Jets",
+    "Los Angeles Kings"
+  ],
+  "987": [
+    "Winnipeg Jets",
+    "Los Angeles Kings"
+  ],
+  "988": [
+    "Winnipeg Jets",
+    "San Jose Sharks"
+  ],
+  "989": [
+    "Winnipeg Jets",
+    "Seattle Kraken"
+  ],
+  "990": [
+    "Winnipeg Jets",
+    "Vancouver Canucks"
+  ],
+  "991": [
+    "Winnipeg Jets",
+    "Vegas Golden Knights"
+  ],
+  "992": [
+    "Winnipeg Jets",
+    "Boston Bruins"
+  ],
+  "993": [
+    "Winnipeg Jets",
+    "Buffalo Sabres"
+  ],
+  "994": [
+    "Winnipeg Jets",
+    "Detroit Red Wings"
+  ],
+  "995": [
+    "Winnipeg Jets",
+    "Florida Panthers"
+  ],
+  "996": [
+    "Winnipeg Jets",
+    "Montreal Canadiens"
+  ],
+  "997": [
+    "Winnipeg Jets",
+    "Ottawa Senators"
+  ],
+  "998": [
+    "Winnipeg Jets",
+    "Tampa Bay Lightning"
+  ],
+  "999": [
+    "Winnipeg Jets",
+    "Toronto Maple Leafs"
+  ],
+  "1000": [
+    "Winnipeg Jets",
+    "Carolina Hurricanes"
+  ],
+  "1001": [
+    "Winnipeg Jets",
+    "Columbus Blue Jackets"
+  ],
+  "1002": [
+    "Winnipeg Jets",
+    "New Jersey Devils"
+  ],
+  "1003": [
+    "Winnipeg Jets",
+    "New York Islanders"
+  ],
+  "1004": [
+    "Winnipeg Jets",
+    "New York Rangers"
+  ],
+  "1005": [
+    "Winnipeg Jets",
+    "Philadelphia Flyers"
+  ],
+  "1006": [
+    "Winnipeg Jets",
+    "Pittsburgh Penguins"
+  ],
+  "1007": [
+    "Winnipeg Jets",
+    "Washington Capitals"
+  ],
+  "1008": [
+    "Anaheim Ducks",
+    "Calgary Flames"
+  ],
+  "1009": [
+    "Anaheim Ducks",
+    "Calgary Flames"
+  ],
+  "1010": [
+    "Anaheim Ducks",
+    "Edmonton Oilers"
+  ],
+  "1011": [
+    "Anaheim Ducks",
+    "Edmonton Oilers"
+  ],
+  "1012": [
+    "Anaheim Ducks",
+    "Los Angeles Kings"
+  ],
+  "1013": [
+    "Anaheim Ducks",
+    "Los Angeles Kings"
+  ],
+  "1014": [
+    "Anaheim Ducks",
+    "San Jose Sharks"
+  ],
+  "1015": [
+    "Anaheim Ducks",
+    "San Jose Sharks"
+  ],
+  "1016": [
+    "Anaheim Ducks",
+    "Seattle Kraken"
+  ],
+  "1017": [
+    "Anaheim Ducks",
+    "Seattle Kraken"
+  ],
+  "1018": [
+    "Anaheim Ducks",
+    "Vancouver Canucks"
+  ],
+  "1019": [
+    "Anaheim Ducks",
+    "Vancouver Canucks"
+  ],
+  "1020": [
+    "Anaheim Ducks",
+    "Vegas Golden Knights"
+  ],
+  "1021": [
+    "Anaheim Ducks",
+    "Vegas Golden Knights"
+  ],
+  "1022": [
+    "Anaheim Ducks",
+    "Chicago Blackhawks"
+  ],
+  "1023": [
+    "Anaheim Ducks",
+    "Chicago Blackhawks"
+  ],
+  "1024": [
+    "Anaheim Ducks",
+    "Colorado Avalanche"
+  ],
+  "1025": [
+    "Anaheim Ducks",
+    "Colorado Avalanche"
+  ],
+  "1026": [
+    "Anaheim Ducks",
+    "Dallas Stars"
+  ],
+  "1027": [
+    "Anaheim Ducks",
+    "Dallas Stars"
+  ],
+  "1028": [
+    "Anaheim Ducks",
+    "Minnesota Wild"
+  ],
+  "1029": [
+    "Anaheim Ducks",
+    "Minnesota Wild"
+  ],
+  "1030": [
+    "Anaheim Ducks",
+    "Nashville Predators"
+  ],
+  "1031": [
+    "Anaheim Ducks",
+    "St. Louis Blues"
+  ],
+  "1032": [
+    "Anaheim Ducks",
+    "Utah Mammoth"
+  ],
+  "1033": [
+    "Anaheim Ducks",
+    "Winnipeg Jets"
+  ],
+  "1034": [
+    "Anaheim Ducks",
+    "Boston Bruins"
+  ],
+  "1035": [
+    "Anaheim Ducks",
+    "Buffalo Sabres"
+  ],
+  "1036": [
+    "Anaheim Ducks",
+    "Detroit Red Wings"
+  ],
+  "1037": [
+    "Anaheim Ducks",
+    "Florida Panthers"
+  ],
+  "1038": [
+    "Anaheim Ducks",
+    "Montreal Canadiens"
+  ],
+  "1039": [
+    "Anaheim Ducks",
+    "Ottawa Senators"
+  ],
+  "1040": [
+    "Anaheim Ducks",
+    "Tampa Bay Lightning"
+  ],
+  "1041": [
+    "Anaheim Ducks",
+    "Toronto Maple Leafs"
+  ],
+  "1042": [
+    "Anaheim Ducks",
+    "Carolina Hurricanes"
+  ],
+  "1043": [
+    "Anaheim Ducks",
+    "Columbus Blue Jackets"
+  ],
+  "1044": [
+    "Anaheim Ducks",
+    "New Jersey Devils"
+  ],
+  "1045": [
+    "Anaheim Ducks",
+    "New York Islanders"
+  ],
+  "1046": [
+    "Anaheim Ducks",
+    "New York Rangers"
+  ],
+  "1047": [
+    "Anaheim Ducks",
+    "Philadelphia Flyers"
+  ],
+  "1048": [
+    "Anaheim Ducks",
+    "Pittsburgh Penguins"
+  ],
+  "1049": [
+    "Anaheim Ducks",
+    "Washington Capitals"
+  ],
+  "1050": [
+    "Calgary Flames",
+    "Anaheim Ducks"
+  ],
+  "1051": [
+    "Calgary Flames",
+    "Anaheim Ducks"
+  ],
+  "1052": [
+    "Calgary Flames",
+    "Edmonton Oilers"
+  ],
+  "1053": [
+    "Calgary Flames",
+    "Edmonton Oilers"
+  ],
+  "1054": [
+    "Calgary Flames",
+    "Los Angeles Kings"
+  ],
+  "1055": [
+    "Calgary Flames",
+    "Los Angeles Kings"
+  ],
+  "1056": [
+    "Calgary Flames",
+    "San Jose Sharks"
+  ],
+  "1057": [
+    "Calgary Flames",
+    "San Jose Sharks"
+  ],
+  "1058": [
+    "Calgary Flames",
+    "Seattle Kraken"
+  ],
+  "1059": [
+    "Calgary Flames",
+    "Seattle Kraken"
+  ],
+  "1060": [
+    "Calgary Flames",
+    "Vancouver Canucks"
+  ],
+  "1061": [
+    "Calgary Flames",
+    "Vancouver Canucks"
+  ],
+  "1062": [
+    "Calgary Flames",
+    "Vegas Golden Knights"
+  ],
+  "1063": [
+    "Calgary Flames",
+    "Vegas Golden Knights"
+  ],
+  "1064": [
+    "Calgary Flames",
+    "Chicago Blackhawks"
+  ],
+  "1065": [
+    "Calgary Flames",
+    "Chicago Blackhawks"
+  ],
+  "1066": [
+    "Calgary Flames",
+    "Colorado Avalanche"
+  ],
+  "1067": [
+    "Calgary Flames",
+    "Colorado Avalanche"
+  ],
+  "1068": [
+    "Calgary Flames",
+    "Dallas Stars"
+  ],
+  "1069": [
+    "Calgary Flames",
+    "Dallas Stars"
+  ],
+  "1070": [
+    "Calgary Flames",
+    "Minnesota Wild"
+  ],
+  "1071": [
+    "Calgary Flames",
+    "Minnesota Wild"
+  ],
+  "1072": [
+    "Calgary Flames",
+    "Nashville Predators"
+  ],
+  "1073": [
+    "Calgary Flames",
+    "St. Louis Blues"
+  ],
+  "1074": [
+    "Calgary Flames",
+    "Utah Mammoth"
+  ],
+  "1075": [
+    "Calgary Flames",
+    "Winnipeg Jets"
+  ],
+  "1076": [
+    "Calgary Flames",
+    "Boston Bruins"
+  ],
+  "1077": [
+    "Calgary Flames",
+    "Buffalo Sabres"
+  ],
+  "1078": [
+    "Calgary Flames",
+    "Detroit Red Wings"
+  ],
+  "1079": [
+    "Calgary Flames",
+    "Florida Panthers"
+  ],
+  "1080": [
+    "Calgary Flames",
+    "Montreal Canadiens"
+  ],
+  "1081": [
+    "Calgary Flames",
+    "Ottawa Senators"
+  ],
+  "1082": [
+    "Calgary Flames",
+    "Tampa Bay Lightning"
+  ],
+  "1083": [
+    "Calgary Flames",
+    "Toronto Maple Leafs"
+  ],
+  "1084": [
+    "Calgary Flames",
+    "Carolina Hurricanes"
+  ],
+  "1085": [
+    "Calgary Flames",
+    "Columbus Blue Jackets"
+  ],
+  "1086": [
+    "Calgary Flames",
+    "New Jersey Devils"
+  ],
+  "1087": [
+    "Calgary Flames",
+    "New York Islanders"
+  ],
+  "1088": [
+    "Calgary Flames",
+    "New York Rangers"
+  ],
+  "1089": [
+    "Calgary Flames",
+    "Philadelphia Flyers"
+  ],
+  "1090": [
+    "Calgary Flames",
+    "Pittsburgh Penguins"
+  ],
+  "1091": [
+    "Calgary Flames",
+    "Washington Capitals"
+  ],
+  "1092": [
+    "Edmonton Oilers",
+    "Anaheim Ducks"
+  ],
+  "1093": [
+    "Edmonton Oilers",
+    "Anaheim Ducks"
+  ],
+  "1094": [
+    "Edmonton Oilers",
+    "Calgary Flames"
+  ],
+  "1095": [
+    "Edmonton Oilers",
+    "Calgary Flames"
+  ],
+  "1096": [
+    "Edmonton Oilers",
+    "Los Angeles Kings"
+  ],
+  "1097": [
+    "Edmonton Oilers",
+    "Los Angeles Kings"
+  ],
+  "1098": [
+    "Edmonton Oilers",
+    "San Jose Sharks"
+  ],
+  "1099": [
+    "Edmonton Oilers",
+    "San Jose Sharks"
+  ],
+  "1100": [
+    "Edmonton Oilers",
+    "Seattle Kraken"
+  ],
+  "1101": [
+    "Edmonton Oilers",
+    "Seattle Kraken"
+  ],
+  "1102": [
+    "Edmonton Oilers",
+    "Vancouver Canucks"
+  ],
+  "1103": [
+    "Edmonton Oilers",
+    "Vancouver Canucks"
+  ],
+  "1104": [
+    "Edmonton Oilers",
+    "Vegas Golden Knights"
+  ],
+  "1105": [
+    "Edmonton Oilers",
+    "Vegas Golden Knights"
+  ],
+  "1106": [
+    "Edmonton Oilers",
+    "Chicago Blackhawks"
+  ],
+  "1107": [
+    "Edmonton Oilers",
+    "Chicago Blackhawks"
+  ],
+  "1108": [
+    "Edmonton Oilers",
+    "Colorado Avalanche"
+  ],
+  "1109": [
+    "Edmonton Oilers",
+    "Colorado Avalanche"
+  ],
+  "1110": [
+    "Edmonton Oilers",
+    "Dallas Stars"
+  ],
+  "1111": [
+    "Edmonton Oilers",
+    "Dallas Stars"
+  ],
+  "1112": [
+    "Edmonton Oilers",
+    "Minnesota Wild"
+  ],
+  "1113": [
+    "Edmonton Oilers",
+    "Minnesota Wild"
+  ],
+  "1114": [
+    "Edmonton Oilers",
+    "Nashville Predators"
+  ],
+  "1115": [
+    "Edmonton Oilers",
+    "St. Louis Blues"
+  ],
+  "1116": [
+    "Edmonton Oilers",
+    "Utah Mammoth"
+  ],
+  "1117": [
+    "Edmonton Oilers",
+    "Winnipeg Jets"
+  ],
+  "1118": [
+    "Edmonton Oilers",
+    "Boston Bruins"
+  ],
+  "1119": [
+    "Edmonton Oilers",
+    "Buffalo Sabres"
+  ],
+  "1120": [
+    "Edmonton Oilers",
+    "Detroit Red Wings"
+  ],
+  "1121": [
+    "Edmonton Oilers",
+    "Florida Panthers"
+  ],
+  "1122": [
+    "Edmonton Oilers",
+    "Montreal Canadiens"
+  ],
+  "1123": [
+    "Edmonton Oilers",
+    "Ottawa Senators"
+  ],
+  "1124": [
+    "Edmonton Oilers",
+    "Tampa Bay Lightning"
+  ],
+  "1125": [
+    "Edmonton Oilers",
+    "Toronto Maple Leafs"
+  ],
+  "1126": [
+    "Edmonton Oilers",
+    "Carolina Hurricanes"
+  ],
+  "1127": [
+    "Edmonton Oilers",
+    "Columbus Blue Jackets"
+  ],
+  "1128": [
+    "Edmonton Oilers",
+    "New Jersey Devils"
+  ],
+  "1129": [
+    "Edmonton Oilers",
+    "New York Islanders"
+  ],
+  "1130": [
+    "Edmonton Oilers",
+    "New York Rangers"
+  ],
+  "1131": [
+    "Edmonton Oilers",
+    "Philadelphia Flyers"
+  ],
+  "1132": [
+    "Edmonton Oilers",
+    "Pittsburgh Penguins"
+  ],
+  "1133": [
+    "Edmonton Oilers",
+    "Washington Capitals"
+  ],
+  "1134": [
+    "Los Angeles Kings",
+    "Anaheim Ducks"
+  ],
+  "1135": [
+    "Los Angeles Kings",
+    "Anaheim Ducks"
+  ],
+  "1136": [
+    "Los Angeles Kings",
+    "Calgary Flames"
+  ],
+  "1137": [
+    "Los Angeles Kings",
+    "Calgary Flames"
+  ],
+  "1138": [
+    "Los Angeles Kings",
+    "Edmonton Oilers"
+  ],
+  "1139": [
+    "Los Angeles Kings",
+    "Edmonton Oilers"
+  ],
+  "1140": [
+    "Los Angeles Kings",
+    "San Jose Sharks"
+  ],
+  "1141": [
+    "Los Angeles Kings",
+    "San Jose Sharks"
+  ],
+  "1142": [
+    "Los Angeles Kings",
+    "Seattle Kraken"
+  ],
+  "1143": [
+    "Los Angeles Kings",
+    "Seattle Kraken"
+  ],
+  "1144": [
+    "Los Angeles Kings",
+    "Vancouver Canucks"
+  ],
+  "1145": [
+    "Los Angeles Kings",
+    "Vancouver Canucks"
+  ],
+  "1146": [
+    "Los Angeles Kings",
+    "Vegas Golden Knights"
+  ],
+  "1147": [
+    "Los Angeles Kings",
+    "Vegas Golden Knights"
+  ],
+  "1148": [
+    "Los Angeles Kings",
+    "Chicago Blackhawks"
+  ],
+  "1149": [
+    "Los Angeles Kings",
+    "Chicago Blackhawks"
+  ],
+  "1150": [
+    "Los Angeles Kings",
+    "Colorado Avalanche"
+  ],
+  "1151": [
+    "Los Angeles Kings",
+    "Colorado Avalanche"
+  ],
+  "1152": [
+    "Los Angeles Kings",
+    "Dallas Stars"
+  ],
+  "1153": [
+    "Los Angeles Kings",
+    "Dallas Stars"
+  ],
+  "1154": [
+    "Los Angeles Kings",
+    "Minnesota Wild"
+  ],
+  "1155": [
+    "Los Angeles Kings",
+    "Minnesota Wild"
+  ],
+  "1156": [
+    "Los Angeles Kings",
+    "Nashville Predators"
+  ],
+  "1157": [
+    "Los Angeles Kings",
+    "St. Louis Blues"
+  ],
+  "1158": [
+    "Los Angeles Kings",
+    "Utah Mammoth"
+  ],
+  "1159": [
+    "Los Angeles Kings",
+    "Winnipeg Jets"
+  ],
+  "1160": [
+    "Los Angeles Kings",
+    "Boston Bruins"
+  ],
+  "1161": [
+    "Los Angeles Kings",
+    "Buffalo Sabres"
+  ],
+  "1162": [
+    "Los Angeles Kings",
+    "Detroit Red Wings"
+  ],
+  "1163": [
+    "Los Angeles Kings",
+    "Florida Panthers"
+  ],
+  "1164": [
+    "Los Angeles Kings",
+    "Montreal Canadiens"
+  ],
+  "1165": [
+    "Los Angeles Kings",
+    "Ottawa Senators"
+  ],
+  "1166": [
+    "Los Angeles Kings",
+    "Tampa Bay Lightning"
+  ],
+  "1167": [
+    "Los Angeles Kings",
+    "Toronto Maple Leafs"
+  ],
+  "1168": [
+    "Los Angeles Kings",
+    "Carolina Hurricanes"
+  ],
+  "1169": [
+    "Los Angeles Kings",
+    "Columbus Blue Jackets"
+  ],
+  "1170": [
+    "Los Angeles Kings",
+    "New Jersey Devils"
+  ],
+  "1171": [
+    "Los Angeles Kings",
+    "New York Islanders"
+  ],
+  "1172": [
+    "Los Angeles Kings",
+    "New York Rangers"
+  ],
+  "1173": [
+    "Los Angeles Kings",
+    "Philadelphia Flyers"
+  ],
+  "1174": [
+    "Los Angeles Kings",
+    "Pittsburgh Penguins"
+  ],
+  "1175": [
+    "Los Angeles Kings",
+    "Washington Capitals"
+  ],
+  "1176": [
+    "San Jose Sharks",
+    "Anaheim Ducks"
+  ],
+  "1177": [
+    "San Jose Sharks",
+    "Anaheim Ducks"
+  ],
+  "1178": [
+    "San Jose Sharks",
+    "Calgary Flames"
+  ],
+  "1179": [
+    "San Jose Sharks",
+    "Calgary Flames"
+  ],
+  "1180": [
+    "San Jose Sharks",
+    "Edmonton Oilers"
+  ],
+  "1181": [
+    "San Jose Sharks",
+    "Edmonton Oilers"
+  ],
+  "1182": [
+    "San Jose Sharks",
+    "Los Angeles Kings"
+  ],
+  "1183": [
+    "San Jose Sharks",
+    "Los Angeles Kings"
+  ],
+  "1184": [
+    "San Jose Sharks",
+    "Seattle Kraken"
+  ],
+  "1185": [
+    "San Jose Sharks",
+    "Seattle Kraken"
+  ],
+  "1186": [
+    "San Jose Sharks",
+    "Vancouver Canucks"
+  ],
+  "1187": [
+    "San Jose Sharks",
+    "Vancouver Canucks"
+  ],
+  "1188": [
+    "San Jose Sharks",
+    "Vegas Golden Knights"
+  ],
+  "1189": [
+    "San Jose Sharks",
+    "Vegas Golden Knights"
+  ],
+  "1190": [
+    "San Jose Sharks",
+    "Chicago Blackhawks"
+  ],
+  "1191": [
+    "San Jose Sharks",
+    "Chicago Blackhawks"
+  ],
+  "1192": [
+    "San Jose Sharks",
+    "Colorado Avalanche"
+  ],
+  "1193": [
+    "San Jose Sharks",
+    "Colorado Avalanche"
+  ],
+  "1194": [
+    "San Jose Sharks",
+    "Dallas Stars"
+  ],
+  "1195": [
+    "San Jose Sharks",
+    "Dallas Stars"
+  ],
+  "1196": [
+    "San Jose Sharks",
+    "Minnesota Wild"
+  ],
+  "1197": [
+    "San Jose Sharks",
+    "Minnesota Wild"
+  ],
+  "1198": [
+    "San Jose Sharks",
+    "Nashville Predators"
+  ],
+  "1199": [
+    "San Jose Sharks",
+    "St. Louis Blues"
+  ],
+  "1200": [
+    "San Jose Sharks",
+    "Utah Mammoth"
+  ],
+  "1201": [
+    "San Jose Sharks",
+    "Winnipeg Jets"
+  ],
+  "1202": [
+    "San Jose Sharks",
+    "Boston Bruins"
+  ],
+  "1203": [
+    "San Jose Sharks",
+    "Buffalo Sabres"
+  ],
+  "1204": [
+    "San Jose Sharks",
+    "Detroit Red Wings"
+  ],
+  "1205": [
+    "San Jose Sharks",
+    "Florida Panthers"
+  ],
+  "1206": [
+    "San Jose Sharks",
+    "Montreal Canadiens"
+  ],
+  "1207": [
+    "San Jose Sharks",
+    "Ottawa Senators"
+  ],
+  "1208": [
+    "San Jose Sharks",
+    "Tampa Bay Lightning"
+  ],
+  "1209": [
+    "San Jose Sharks",
+    "Toronto Maple Leafs"
+  ],
+  "1210": [
+    "San Jose Sharks",
+    "Carolina Hurricanes"
+  ],
+  "1211": [
+    "San Jose Sharks",
+    "Columbus Blue Jackets"
+  ],
+  "1212": [
+    "San Jose Sharks",
+    "New Jersey Devils"
+  ],
+  "1213": [
+    "San Jose Sharks",
+    "New York Islanders"
+  ],
+  "1214": [
+    "San Jose Sharks",
+    "New York Rangers"
+  ],
+  "1215": [
+    "San Jose Sharks",
+    "Philadelphia Flyers"
+  ],
+  "1216": [
+    "San Jose Sharks",
+    "Pittsburgh Penguins"
+  ],
+  "1217": [
+    "San Jose Sharks",
+    "Washington Capitals"
+  ],
+  "1218": [
+    "Seattle Kraken",
+    "Anaheim Ducks"
+  ],
+  "1219": [
+    "Seattle Kraken",
+    "Anaheim Ducks"
+  ],
+  "1220": [
+    "Seattle Kraken",
+    "Calgary Flames"
+  ],
+  "1221": [
+    "Seattle Kraken",
+    "Calgary Flames"
+  ],
+  "1222": [
+    "Seattle Kraken",
+    "Edmonton Oilers"
+  ],
+  "1223": [
+    "Seattle Kraken",
+    "Edmonton Oilers"
+  ],
+  "1224": [
+    "Seattle Kraken",
+    "Los Angeles Kings"
+  ],
+  "1225": [
+    "Seattle Kraken",
+    "Los Angeles Kings"
+  ],
+  "1226": [
+    "Seattle Kraken",
+    "San Jose Sharks"
+  ],
+  "1227": [
+    "Seattle Kraken",
+    "San Jose Sharks"
+  ],
+  "1228": [
+    "Seattle Kraken",
+    "Vancouver Canucks"
+  ],
+  "1229": [
+    "Seattle Kraken",
+    "Vancouver Canucks"
+  ],
+  "1230": [
+    "Seattle Kraken",
+    "Vegas Golden Knights"
+  ],
+  "1231": [
+    "Seattle Kraken",
+    "Vegas Golden Knights"
+  ],
+  "1232": [
+    "Seattle Kraken",
+    "Chicago Blackhawks"
+  ],
+  "1233": [
+    "Seattle Kraken",
+    "Chicago Blackhawks"
+  ],
+  "1234": [
+    "Seattle Kraken",
+    "Colorado Avalanche"
+  ],
+  "1235": [
+    "Seattle Kraken",
+    "Colorado Avalanche"
+  ],
+  "1236": [
+    "Seattle Kraken",
+    "Dallas Stars"
+  ],
+  "1237": [
+    "Seattle Kraken",
+    "Dallas Stars"
+  ],
+  "1238": [
+    "Seattle Kraken",
+    "Minnesota Wild"
+  ],
+  "1239": [
+    "Seattle Kraken",
+    "Minnesota Wild"
+  ],
+  "1240": [
+    "Seattle Kraken",
+    "Nashville Predators"
+  ],
+  "1241": [
+    "Seattle Kraken",
+    "St. Louis Blues"
+  ],
+  "1242": [
+    "Seattle Kraken",
+    "Utah Mammoth"
+  ],
+  "1243": [
+    "Seattle Kraken",
+    "Winnipeg Jets"
+  ],
+  "1244": [
+    "Seattle Kraken",
+    "Boston Bruins"
+  ],
+  "1245": [
+    "Seattle Kraken",
+    "Buffalo Sabres"
+  ],
+  "1246": [
+    "Seattle Kraken",
+    "Detroit Red Wings"
+  ],
+  "1247": [
+    "Seattle Kraken",
+    "Florida Panthers"
+  ],
+  "1248": [
+    "Seattle Kraken",
+    "Montreal Canadiens"
+  ],
+  "1249": [
+    "Seattle Kraken",
+    "Ottawa Senators"
+  ],
+  "1250": [
+    "Seattle Kraken",
+    "Tampa Bay Lightning"
+  ],
+  "1251": [
+    "Seattle Kraken",
+    "Toronto Maple Leafs"
+  ],
+  "1252": [
+    "Seattle Kraken",
+    "Carolina Hurricanes"
+  ],
+  "1253": [
+    "Seattle Kraken",
+    "Columbus Blue Jackets"
+  ],
+  "1254": [
+    "Seattle Kraken",
+    "New Jersey Devils"
+  ],
+  "1255": [
+    "Seattle Kraken",
+    "New York Islanders"
+  ],
+  "1256": [
+    "Seattle Kraken",
+    "New York Rangers"
+  ],
+  "1257": [
+    "Seattle Kraken",
+    "Philadelphia Flyers"
+  ],
+  "1258": [
+    "Seattle Kraken",
+    "Pittsburgh Penguins"
+  ],
+  "1259": [
+    "Seattle Kraken",
+    "Washington Capitals"
+  ],
+  "1260": [
+    "Vancouver Canucks",
+    "Anaheim Ducks"
+  ],
+  "1261": [
+    "Vancouver Canucks",
+    "Anaheim Ducks"
+  ],
+  "1262": [
+    "Vancouver Canucks",
+    "Calgary Flames"
+  ],
+  "1263": [
+    "Vancouver Canucks",
+    "Calgary Flames"
+  ],
+  "1264": [
+    "Vancouver Canucks",
+    "Edmonton Oilers"
+  ],
+  "1265": [
+    "Vancouver Canucks",
+    "Edmonton Oilers"
+  ],
+  "1266": [
+    "Vancouver Canucks",
+    "Los Angeles Kings"
+  ],
+  "1267": [
+    "Vancouver Canucks",
+    "Los Angeles Kings"
+  ],
+  "1268": [
+    "Vancouver Canucks",
+    "San Jose Sharks"
+  ],
+  "1269": [
+    "Vancouver Canucks",
+    "San Jose Sharks"
+  ],
+  "1270": [
+    "Vancouver Canucks",
+    "Seattle Kraken"
+  ],
+  "1271": [
+    "Vancouver Canucks",
+    "Seattle Kraken"
+  ],
+  "1272": [
+    "Vancouver Canucks",
+    "Vegas Golden Knights"
+  ],
+  "1273": [
+    "Vancouver Canucks",
+    "Vegas Golden Knights"
+  ],
+  "1274": [
+    "Vancouver Canucks",
+    "Chicago Blackhawks"
+  ],
+  "1275": [
+    "Vancouver Canucks",
+    "Chicago Blackhawks"
+  ],
+  "1276": [
+    "Vancouver Canucks",
+    "Colorado Avalanche"
+  ],
+  "1277": [
+    "Vancouver Canucks",
+    "Colorado Avalanche"
+  ],
+  "1278": [
+    "Vancouver Canucks",
+    "Dallas Stars"
+  ],
+  "1279": [
+    "Vancouver Canucks",
+    "Dallas Stars"
+  ],
+  "1280": [
+    "Vancouver Canucks",
+    "Minnesota Wild"
+  ],
+  "1281": [
+    "Vancouver Canucks",
+    "Minnesota Wild"
+  ],
+  "1282": [
+    "Vancouver Canucks",
+    "Nashville Predators"
+  ],
+  "1283": [
+    "Vancouver Canucks",
+    "St. Louis Blues"
+  ],
+  "1284": [
+    "Vancouver Canucks",
+    "Utah Mammoth"
+  ],
+  "1285": [
+    "Vancouver Canucks",
+    "Winnipeg Jets"
+  ],
+  "1286": [
+    "Vancouver Canucks",
+    "Boston Bruins"
+  ],
+  "1287": [
+    "Vancouver Canucks",
+    "Buffalo Sabres"
+  ],
+  "1288": [
+    "Vancouver Canucks",
+    "Detroit Red Wings"
+  ],
+  "1289": [
+    "Vancouver Canucks",
+    "Florida Panthers"
+  ],
+  "1290": [
+    "Vancouver Canucks",
+    "Montreal Canadiens"
+  ],
+  "1291": [
+    "Vancouver Canucks",
+    "Ottawa Senators"
+  ],
+  "1292": [
+    "Vancouver Canucks",
+    "Tampa Bay Lightning"
+  ],
+  "1293": [
+    "Vancouver Canucks",
+    "Toronto Maple Leafs"
+  ],
+  "1294": [
+    "Vancouver Canucks",
+    "Carolina Hurricanes"
+  ],
+  "1295": [
+    "Vancouver Canucks",
+    "Columbus Blue Jackets"
+  ],
+  "1296": [
+    "Vancouver Canucks",
+    "New Jersey Devils"
+  ],
+  "1297": [
+    "Vancouver Canucks",
+    "New York Islanders"
+  ],
+  "1298": [
+    "Vancouver Canucks",
+    "New York Rangers"
+  ],
+  "1299": [
+    "Vancouver Canucks",
+    "Philadelphia Flyers"
+  ],
+  "1300": [
+    "Vancouver Canucks",
+    "Pittsburgh Penguins"
+  ],
+  "1301": [
+    "Vancouver Canucks",
+    "Washington Capitals"
+  ],
+  "1302": [
+    "Vegas Golden Knights",
+    "Anaheim Ducks"
+  ],
+  "1303": [
+    "Vegas Golden Knights",
+    "Anaheim Ducks"
+  ],
+  "1304": [
+    "Vegas Golden Knights",
+    "Calgary Flames"
+  ],
+  "1305": [
+    "Vegas Golden Knights",
+    "Calgary Flames"
+  ],
+  "1306": [
+    "Vegas Golden Knights",
+    "Edmonton Oilers"
+  ],
+  "1307": [
+    "Vegas Golden Knights",
+    "Edmonton Oilers"
+  ],
+  "1308": [
+    "Vegas Golden Knights",
+    "Los Angeles Kings"
+  ],
+  "1309": [
+    "Vegas Golden Knights",
+    "Los Angeles Kings"
+  ],
+  "1310": [
+    "Vegas Golden Knights",
+    "San Jose Sharks"
+  ],
+  "1311": [
+    "Vegas Golden Knights",
+    "San Jose Sharks"
+  ],
+  "1312": [
+    "Vegas Golden Knights",
+    "Seattle Kraken"
+  ],
+  "1313": [
+    "Vegas Golden Knights",
+    "Seattle Kraken"
+  ],
+  "1314": [
+    "Vegas Golden Knights",
+    "Vancouver Canucks"
+  ],
+  "1315": [
+    "Vegas Golden Knights",
+    "Vancouver Canucks"
+  ],
+  "1316": [
+    "Vegas Golden Knights",
+    "Chicago Blackhawks"
+  ],
+  "1317": [
+    "Vegas Golden Knights",
+    "Chicago Blackhawks"
+  ],
+  "1318": [
+    "Vegas Golden Knights",
+    "Colorado Avalanche"
+  ],
+  "1319": [
+    "Vegas Golden Knights",
+    "Colorado Avalanche"
+  ],
+  "1320": [
+    "Vegas Golden Knights",
+    "Dallas Stars"
+  ],
+  "1321": [
+    "Vegas Golden Knights",
+    "Dallas Stars"
+  ],
+  "1322": [
+    "Vegas Golden Knights",
+    "Minnesota Wild"
+  ],
+  "1323": [
+    "Vegas Golden Knights",
+    "Minnesota Wild"
+  ],
+  "1324": [
+    "Vegas Golden Knights",
+    "Nashville Predators"
+  ],
+  "1325": [
+    "Vegas Golden Knights",
+    "St. Louis Blues"
+  ],
+  "1326": [
+    "Vegas Golden Knights",
+    "Utah Mammoth"
+  ],
+  "1327": [
+    "Vegas Golden Knights",
+    "Winnipeg Jets"
+  ],
+  "1328": [
+    "Vegas Golden Knights",
+    "Boston Bruins"
+  ],
+  "1329": [
+    "Vegas Golden Knights",
+    "Buffalo Sabres"
+  ],
+  "1330": [
+    "Vegas Golden Knights",
+    "Detroit Red Wings"
+  ],
+  "1331": [
+    "Vegas Golden Knights",
+    "Florida Panthers"
+  ],
+  "1332": [
+    "Vegas Golden Knights",
+    "Montreal Canadiens"
+  ],
+  "1333": [
+    "Vegas Golden Knights",
+    "Ottawa Senators"
+  ],
+  "1334": [
+    "Vegas Golden Knights",
+    "Tampa Bay Lightning"
+  ],
+  "1335": [
+    "Vegas Golden Knights",
+    "Toronto Maple Leafs"
+  ],
+  "1336": [
+    "Vegas Golden Knights",
+    "Carolina Hurricanes"
+  ],
+  "1337": [
+    "Vegas Golden Knights",
+    "Columbus Blue Jackets"
+  ],
+  "1338": [
+    "Vegas Golden Knights",
+    "New Jersey Devils"
+  ],
+  "1339": [
+    "Vegas Golden Knights",
+    "New York Islanders"
+  ],
+  "1340": [
+    "Vegas Golden Knights",
+    "New York Rangers"
+  ],
+  "1341": [
+    "Vegas Golden Knights",
+    "Philadelphia Flyers"
+  ],
+  "1342": [
+    "Vegas Golden Knights",
+    "Pittsburgh Penguins"
+  ],
+  "1343": [
+    "Vegas Golden Knights",
+    "Washington Capitals"
+  ]
+}
