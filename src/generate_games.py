@@ -4,50 +4,50 @@ from collections import defaultdict
 from collections import Counter
 
 
-
 TEAMS = {
     # Eastern Conference
     # Atlantic Division
-    "Boston Bruins": "Atlantic",
-    "Buffalo Sabres": "Atlantic",
-    "Detroit Red Wings": "Atlantic",
-    "Florida Panthers": "Atlantic",
-    "Montreal Canadiens": "Atlantic",
-    "Ottawa Senators": "Atlantic",
-    "Tampa Bay Lightning": "Atlantic",
-    "Toronto Maple Leafs": "Atlantic",
+    "BOS": "Atlantic",
+    "BUF": "Atlantic",
+    "DET": "Atlantic",
+    "FLA": "Atlantic",
+    "MTL": "Atlantic",
+    "OTT": "Atlantic",
+    "TBL": "Atlantic",
+    "TOR": "Atlantic",
 
     # Metropolitan Division
-    "Carolina Hurricanes": "Metropolitan",
-    "Columbus Blue Jackets": "Metropolitan",
-    "New Jersey Devils": "Metropolitan",
-    "New York Islanders": "Metropolitan",
-    "New York Rangers": "Metropolitan",
-    "Philadelphia Flyers": "Metropolitan",
-    "Pittsburgh Penguins": "Metropolitan",
-    "Washington Capitals": "Metropolitan",
+    "CAR": "Metropolitan",
+    "CBJ": "Metropolitan",
+    "NJD": "Metropolitan",
+    "NYI": "Metropolitan",
+    "NYR": "Metropolitan",
+    "PHI": "Metropolitan",
+    "PIT": "Metropolitan",
+    "WSH": "Metropolitan",
 
     # Western Conference
     # Central Division
-    "Chicago Blackhawks": "Central",
-    "Colorado Avalanche": "Central",
-    "Dallas Stars": "Central",
-    "Minnesota Wild": "Central",
-    "Nashville Predators": "Central",
-    "St. Louis Blues": "Central",
-    "Utah Mammoth": "Central",
-    "Winnipeg Jets": "Central",
+    "CHI": "Central",
+    "COL": "Central",
+    "DAL": "Central",
+    "MIN": "Central",
+    "NSH": "Central",
+    "STL": "Central",
+    "UTA": "Central",
+    "WPG": "Central",
 
     # Pacific Division
-    "Anaheim Ducks": "Pacific",
-    "Calgary Flames": "Pacific",
-    "Edmonton Oilers": "Pacific",
-    "Los Angeles Kings": "Pacific",
-    "San Jose Sharks": "Pacific",
-    "Seattle Kraken": "Pacific",
-    "Vancouver Canucks": "Pacific",
-    "Vegas Golden Knights": "Pacific"
+    "ANA": "Pacific",
+    "CGY": "Pacific",
+    "EDM": "Pacific",
+    "LAK": "Pacific",
+    "SJS": "Pacific",
+    "SEA": "Pacific",
+    "VAN": "Pacific",
+    "VGK": "Pacific"
 }
+
 
 CONFERENCES = {
     "Eastern": ["Atlantic", "Metropolitan"],
