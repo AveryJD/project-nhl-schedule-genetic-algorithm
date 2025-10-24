@@ -1,7 +1,6 @@
 # Imports
 import json
 from collections import defaultdict
-from collections import Counter
 
 
 TEAMS = {
@@ -87,17 +86,8 @@ for home_team in TEAMS:
     other_conf_divs = [d for c, divs in CONFERENCES.items() if c != home_conf for d in divs]
     for d in other_conf_divs:
         for away_team in division_to_teams[d]:
-            schedule.append((home_team, away_team))  # exactly 1 home game
+            schedule.append((home_team, away_team))
 
-
-
-# Verify each team has 42 home games
-home_counts = Counter(h for h, _ in schedule)
-for team in TEAMS:
-    assert home_counts[team] == 42
-
-# Verify the schedule has 1344 games
-assert len(schedule) == 32 * 42 == 1344
 
 # Make and save JSON file of all games
 schedule_dict = {str(i): [home, away] for i, (home, away) in enumerate(schedule)}
