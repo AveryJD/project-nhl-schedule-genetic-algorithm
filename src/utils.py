@@ -36,14 +36,6 @@ INVALID_DATES.add( datetime.date(2027, 2, 12))
 INVALID_DATES.add( datetime.date(2027, 2, 13))
 
 
-# ====================FITNESS_WEIGHTS====================
-FITNESS_WEIGHTS = {
-    'GAME_REST_WEIGHT': 0.50,
-    'HOME_AWAY_WEIGHT': 0.49,
-    'TRAVEL_WEIGHT': 0.01
-}
-
-
 # ====================DISTANCE FUNCTIONS====================
 def calc_distance(current_location: tuple[float, float], traveling_location: tuple[float, float]) -> float:
     """
@@ -104,7 +96,7 @@ def make_distance_matrix(arena_locations: dict = ARENA_LOCATIONS) -> list[list[f
 
 
 # ====================FITNESS FUNCTIONS====================
-def team_schedule_fitness(team_schedule: list[tuple[str, str]], distance_matrix: list[list[float]], team_index: int, team_list: list[str], fitness_weights: dict = FITNESS_WEIGHTS) -> float:
+def team_schedule_fitness(team_schedule: list[tuple[str, str]], distance_matrix: list[list[float]], team_index: int, team_list: list[str]) -> float:
     """
     Calculates a fitness score for a single team's schedule.
     Penalties related to rest/game day balance, home/away balance, and travel distance are added and then each component is weighted.
@@ -114,16 +106,8 @@ def team_schedule_fitness(team_schedule: list[tuple[str, str]], distance_matrix:
     :param distance_matrix: a matrix containing the travel distance between all NHL arenas
     :param team_index: the index of the current team in the `team_list` (used to locate its city in the distance matrix)
     :param team_list: a list of all NHL team abbreviations
-    :param fitness_weights: a dictionary containing the weight factors for each fitness component
     :return fitness: a float representing the total weighted fitness score for the team.
     """
-
-    # Unpack weight parameters
-    game_rest_weight = fitness_weights['GAME_REST_WEIGHT']
-    home_away_weight = fitness_weights['HOME_AWAY_WEIGHT']
-    travel_weight = fitness_weights['TRAVEL_WEIGHT']
-
-
     # Optimizing rest time
     game_rest_fitness = 0
     for i in range(len(team_schedule) - 1):
@@ -139,9 +123,9 @@ def team_schedule_fitness(team_schedule: list[tuple[str, str]], distance_matrix:
         elif day_gap == 2:
             game_rest_fitness += 1
         elif day_gap == 3:
-            game_rest_fitness += 3
+            game_rest_fitness += 2
         elif day_gap >= 4:
-            game_rest_fitness += 10
+            game_rest_fitness += 5
 
     # Penalize when games are played three days in a row
     for i in range(len(team_schedule) - 2):
@@ -166,11 +150,11 @@ def team_schedule_fitness(team_schedule: list[tuple[str, str]], distance_matrix:
         else:
             # Apply penalties based on how long the streaks are
             if streak == 1:
-                home_away_fitness += 5
+                home_away_fitness += 3
             elif 2 <= streak <= 3:
-                home_away_fitness += 2
-            elif 4 <= streak <= 5:
                 home_away_fitness += 1
+            elif 4 <= streak <= 5:
+                home_away_fitness += 2
             elif 6 <= streak <= 7:
                 home_away_fitness += 5
             else:
@@ -212,7 +196,8 @@ def team_schedule_fitness(team_schedule: list[tuple[str, str]], distance_matrix:
 
 
     # Calculate total team fiitness
-    fitness = (game_rest_fitness * game_rest_weight) + (home_away_fitness * home_away_weight) + (travel_fitness * travel_weight)
+    travel_weight = 0.01
+    fitness = game_rest_fitness + home_away_fitness + (travel_fitness * travel_weight)
 
     return fitness
 
