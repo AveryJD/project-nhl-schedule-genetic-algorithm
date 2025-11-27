@@ -38,9 +38,9 @@ INVALID_DATES.add( datetime.date(2027, 2, 13))
 
 # ====================FITNESS_WEIGHTS====================
 FITNESS_WEIGHTS = {
-    'GAME_REST_WEIGHT': 0.40,
-    'HOME_AWAY_WEIGHT': 0.50,
-    'TRAVEL_WEIGHT': 0.10
+    'GAME_REST_WEIGHT': 0.50,
+    'HOME_AWAY_WEIGHT': 0.49,
+    'TRAVEL_WEIGHT': 0.01
 }
 
 
@@ -148,7 +148,7 @@ def team_schedule_fitness(team_schedule: list[tuple[str, str]], distance_matrix:
         day_one, day_two, day_three = team_schedule[i][2], team_schedule[i+1][2], team_schedule[i+2][2]
         # If three consecutive games only have day gaps of one, it means back-to-back-to-back is occuring
         if (day_two - day_one).days == 1 and (day_three - day_two).days == 1:
-            game_rest_fitness += 10_000
+            game_rest_fitness += 100_000
 
 
     # Optimizing home/away streak balance

@@ -1,10 +1,9 @@
 
 # Imports
-import utils
 import json
 import random
-import math
 import time
+import utils
 
 
 # ====================HYPERPARAMETERS====================
@@ -14,7 +13,7 @@ HYPERPARAMETERS = {
     'STAGNANT_GENERATIONS': 1_000,
 
     'TOURNAMENT_SIZE': 3,
-    'CROSSOVER_RATE': 0.40,
+    'CROSSOVER_RATE': 0.70,
     'MUTATION_RATE': 0.20,
     'ELITISM': True,
 }
@@ -29,7 +28,7 @@ def nhl_schedule_ga(hyperparameters: dict = HYPERPARAMETERS, update_frquency: in
     A genetic algorithm to create an optimal NHL schedule.
     The chromosome representation is a list of lists of integers, where each inner list represents a day in the season and the integers represent the game IDs scheduled for that day.
     The fitness function is a multi-objective function that aims to optimize rest/game day balance, home/away balance, and minimal travel distance.
-    The genetic algorithm uses tournament selection, order crossover, several mutations, and elitism
+    The genetic algorithm uses tournament selection, order crossover, several mutations, and elitism, and terminates when one of two termination criteria are met.
 
     :param hyperparameters: a dictionary of hyperparameter values to use in the genetic algorithm
     :param update_frquency: an integer indicating at what interval of generations to print an update statement
@@ -71,7 +70,7 @@ def nhl_schedule_ga(hyperparameters: dict = HYPERPARAMETERS, update_frquency: in
     best_schedule = population[best_idx]
     _, team_fitnesses = utils.total_schedule_fitness(best_schedule, distance_matrix)
 
-    previous_best_fitness = math.inf
+    previous_best_fitness = float('inf')
 
 
     # ====================INITIALIZE BOOKKEEPING====================
