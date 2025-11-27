@@ -21,7 +21,7 @@ fitness_data = json.load(fitness_json)
 GENERATION_BEST_FITNESS = fitness_data['generation_best_fitnesses']
 GENERATION_AVERAGE_FITNESS = fitness_data['generation_average_fitnesses']
 
-# List of all NHL teams
+# List of all NHL team abreviations
 ALL_TEAMS = ["BOS", "BUF", "DET", "FLA", "MTL", "OTT", "TBL", "TOR",
              "CAR", "CBJ", "NJD", "NYI", "NYR", "PHI", "PIT", "WSH",
              "CHI", "COL", "DAL", "MIN", "NSH", "STL", "UTA", "WPG",
@@ -50,16 +50,19 @@ INVALID_DATES.add(datetime.date(2027, 2, 13))
 
 
 # ========================================PLOT BEST VS AVERAGE FITNESSES FUNCTION========================================
-def plot_best_vs_average_fitness(generation_best_fitness: list[float], 
-                                 generation_average_fitness: list[float], 
-                                 generation_to_start_at: int = 0) -> None:
+def plot_best_vs_average_fitness(generation_best_fitness: list[float], generation_average_fitness: list[float], generation_to_start_at: int = 0) -> None:
     """
+    Plots and saves the best fitness found per generation against the average fitness per generation.
     
+    :param generation_best_fitness: a list of the best fitness scores from each generation
+    :param generation_average_fitness: a list of the average score from each generation
+    :param generation_to_start_at: the starting generation for the plot
+    :return: None
     """
 
+    # Get the range of generations to plot
     best_fitness_subset = generation_best_fitness[generation_to_start_at:]
     average_fitness_subset = generation_average_fitness[generation_to_start_at:]
-
     generations = range(generation_to_start_at, generation_to_start_at + len(best_fitness_subset))
 
     # Plot best vs average fitness
@@ -81,9 +84,14 @@ def league_schedule_calendar_visualization(full_schedule : list[list[int]] = BES
                                            end_date: datetime.date = END_DATE,  
                                            invalid_dates: set[datetime.date] = INVALID_DATES) -> None:
     """
-    Visualize the entire league's schedule on a multi-month calendar, showing up to 6 games per day or the number of games if greater than 6.
-    
+    Visualize the entire league's schedule on a calendar.
 
+    :param full_schedule: a schedule in the form of a list of lists of integers, where the inner lists represent days, and the integers represent game IDs
+    :param all_games: a dictionary mapping game_ids to the teams playing in them ([home_team, away_team])
+    :param start_date: a datetime.date object of the schedule's start date
+    :param end_date: a datetime.date object of the schedule's end date
+    :param invalid_date:  a set of datetime.date objects of dates that should not have games scheduled on them
+    :return: None
     """
     
     #Map games to dates
@@ -171,51 +179,56 @@ def league_schedule_calendar_visualization(full_schedule : list[list[int]] = BES
     plt.close()
 
 
-def get_single_team_schedule(full_schedule: list[list[int]], 
-                             team: str, 
-                             games: dict = ALL_GAMES, 
-                             start_date=START_DATE) -> list[tuple[str, str, datetime.date]]:
+def team_schedule_calendar_visualization(team_schedule: list[tuple], team: str) -> None:
     """
-    Extract the schedule for a single team from the full season schedule.
+    Visualize a single team's schedule on a calendar.
 
-    :param full_schedule: list of lists; each inner list contains game IDs scheduled for that day
-    :param games: dict mapping game_id -> [home_team, away_team]
-    :param team: abbreviation of the team to extract
-    :param start_date: date of the first day in the schedule
-    :return: list of (home_team, away_team, game_date) tuples for this team in chronological order
-    """
-    team_schedule = []
-
-    for day_offset, games_today in enumerate(full_schedule):
-        current_day = start_date + datetime.timedelta(days=day_offset)
-        if games_today:
-            for game_id in games_today:
-                home_team, away_team = games[str(game_id)]
-                if team in [home_team, away_team]:
-                    team_schedule.append((home_team, away_team, current_day))
-
-    return team_schedule
-
-
-def team_schedule_calendar_visualization(team_schedule: list[list[int]], team: str) -> None:
-    """
-    Visualize a team's schedule on a calendar.
-
-
+    :param team_schedule: a list of (home_team, away_team, game_date) tuples for the specific team
+    :param team: the team abbreviation of the calendar to make
+    :return: None
     """
     # Organize games by month
     games_by_month = {}
-    for home, away, game_date in team_schedule:
-        month = game_date.month
+    
+    # Assign games to each month
+    for game_tuple in team_schedule:
+        home = game_tuple[0]
+        away = game_tuple[1]
+        game_date = game_tuple[2]
+        
         year = game_date.year
+        month = game_date.month
         day = game_date.day
-        if (year, month) not in games_by_month:
-            games_by_month[(year, month)] = {}
-        games_by_month[(year, month)][day] = f"vs {away}" if home == team else f"@ {home}"
+        
+        # Determine the key for the games_by_month dictionary
+        date_key = (year, month)
+        
+        # Initialize any months that have not been intialized
+        if date_key not in games_by_month:
+            games_by_month[date_key] = {}
+        
+        # Assign the game opponent description (home or away)
+        game_description = ""
+        if home == team:
+            # Home game (e.g., 'vs TOR')
+            game_description = f"vs {away}"
+        else:
+            # Away game (e.g., '@ BOS')
+            game_description = f"@ {home}"
+            
+        # Assign the game description to the correct day within the month
+        games_by_month[date_key][day] = game_description
 
+    # Generate the list of (year, month) tuples
+    season_months = []
+    # Months for 2026 (October, November, December)
+    for month in range(10, 13):
+        season_months.append((2026, month))
+    # Months for 2027 (January, February, March, April)
+    for month in range(1, 5):
+        season_months.append((2027, month))
 
-    season_months = [(2026, m) for m in range(10, 13)] + [(2027, m) for m in range(1, 5)]
-
+    # Create calendar
     cal = calendar.Calendar(firstweekday=6) 
 
     fig, axes = plt.subplots(2, 4, figsize=(28, 10))
@@ -230,30 +243,37 @@ def team_schedule_calendar_visualization(team_schedule: list[list[int]], team: s
 
         month_days = cal.monthdayscalendar(year, month)
 
-        # Iterate and plot
+        # Plot each day
         for week_idx, week in enumerate(month_days):
             for day_idx, day in enumerate(week):
                 if day == 0:
                     continue
 
-                y = 5 - week_idx
-
                 current_date = datetime.datetime(year, month, day).date()
 
-                # Shade invalid dates
+                # Shade invalid dates red
                 if current_date in INVALID_DATES or current_date < START_DATE or current_date > END_DATE:
                     facecolor = (255/255, 180/255, 180/255)
                 else:
                     facecolor = 'white'
 
                 # Add the day block and number
+                y = 5 - week_idx
                 ax.add_patch(plt.Rectangle((day_idx, y), 1, 1, edgecolor='black', facecolor=facecolor))
                 ax.text(day_idx + 0.05, y + 0.8, str(day), fontsize=10, fontweight='bold', color='black')
 
                 # Add game text if there's a game on the current day
-                if (year, month) in games_by_month and day in games_by_month[(year, month)]:
-                    game_text = games_by_month[(year, month)][day]
-                    color = 'blue' if 'vs' in game_text else 'red'
+                date_key = (year, month)
+                if date_key in games_by_month and day in games_by_month[date_key]:
+                    game_text = games_by_month[date_key][day]
+                    
+                    # Color home games blue and waya games red
+                    color = ''
+                    if 'vs' in game_text:
+                        color = 'blue'
+                    else:
+                        color = 'red'
+                        
                     ax.text(day_idx + 0.05, y + 0.35, game_text, fontsize=12, color=color, weight='bold')
 
     # Hide unused month
@@ -265,12 +285,39 @@ def team_schedule_calendar_visualization(team_schedule: list[list[int]], team: s
     plt.close()
 
 
+def get_single_team_schedule(full_schedule: list[list[int]], 
+                            team: str, 
+                            games: dict = ALL_GAMES, 
+                            start_date=START_DATE) -> list[tuple[str, str, datetime.date]]:
+    """
+    Get the schedule for a single team from the full season schedule.
+
+    :param full_schedule: a schedule in the form of a list of lists of integers, where the inner lists represent days, and the integers represent game IDs
+    :param team: abbreviation of the team to extract
+    :param games: a dictionary mapping game_ids to the teams playing in them ([home_team, away_team])
+    :param start_date: a datetime.date object of the schedule's start date
+    :return team_schedule: a list of (home_team, away_team, game_date) tuples for this team in chronological order
+    """
+    team_schedule = []
+
+    # go through the full schedule, and get the day index and the list of games for that day
+    for day_index, games_today in enumerate(full_schedule):
+        current_day = start_date + datetime.timedelta(days=day_index)
+        if games_today:
+            for game_id in games_today:
+                home_team, away_team = games[str(game_id)]
+                if team in [home_team, away_team]:
+                    team_schedule.append((home_team, away_team, current_day))
+
+    return team_schedule
+
+
 # ========================================CREATE VISUALIZATIONS========================================
 if __name__ == "__main__":
 
     # Create the best vs average fitnesses plots
     plot_best_vs_average_fitness(GENERATION_BEST_FITNESS, GENERATION_AVERAGE_FITNESS)
-    plot_best_vs_average_fitness(GENERATION_BEST_FITNESS, GENERATION_AVERAGE_FITNESS, 1000)
+    plot_best_vs_average_fitness(GENERATION_BEST_FITNESS, GENERATION_AVERAGE_FITNESS, 9000)
 
     # Create a calendar for the entire schedule
     league_schedule_calendar_visualization()
