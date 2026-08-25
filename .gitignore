@@ -1,0 +1,6 @@
+*.pyc
+.DS_Store
+
+/calendars
+/genetic_algorithm_results
+/hyperparameters_results
