@@ -1,5 +1,6 @@
 
 # Imports
+import os
 import numpy as np
 import matplotlib.pyplot as plt
 import scipy.stats as stats
@@ -44,22 +45,25 @@ def run_multiple(hyperparameters: dict, n_runs: int = STATISTICAL_RUNS):
     for i in range(n_runs):
         print(f'Run {i+1}/{n_runs}')
         # Get the best fitness value of the run and add it to the list
-        best_fitness, _ = nhl_schedule_ga(hyperparameters, update_frquency=0, hyper_prarameter_testing=True)
+        best_fitness, _ = nhl_schedule_ga(hyperparameters, update_frequency=0, hyperparameter_testing=True)
         results.append(best_fitness)
     return results
 
 
 # ========================================RUN THE HYPERPARAMETER TEST========================================
 if __name__ == '__main__':
+    os.makedirs('results_hyperparameters', exist_ok=True)
+
     all_results = {}
 
     # Run a test for each test hyperparameter
     for test_hyperparameter in TEST_HYPERPARAMETERS:
-        # Test each value for the test hyperpearameter
+        # Test each value for the test hyperparameter
         values = TEST_HYPERPARAMETERS[test_hyperparameter]
         for value in values:
             print(f'\n====================Testing {test_hyperparameter} = {value}====================')
-            hyperparameters = DEFAULT_HYPERPARAMETERS
+            # Copy the defaults so testing one hyperparameter doesn't permanently change the baseline for the others
+            hyperparameters = DEFAULT_HYPERPARAMETERS.copy()
             hyperparameters[test_hyperparameter] = value
 
             results = run_multiple(hyperparameters, STATISTICAL_RUNS)
@@ -75,18 +79,18 @@ if __name__ == '__main__':
         for result_list in all_results.values():
             current_min = min(result_list)
             current_max = max(result_list)
-            
+
             if current_min < x_min:
                 x_min = current_min
             if current_max > x_max:
                 x_max = current_max
-                
+
         x_values = np.linspace(x_min, x_max, 500)
 
         # Plot the gaussian KDE for each hyperparameter value
         for value, results in all_results.items():
             kde = stats.gaussian_kde(results)
-            plt.plot(x_values, kde(x_values), label=f'{test_hyperparameter} = {value}') 
+            plt.plot(x_values, kde(x_values), label=f'{test_hyperparameter} = {value}')
 
         plt.title(f'Comparison of Best Fitness Distributions')
         plt.xlabel('Best Fitness')
@@ -94,6 +98,6 @@ if __name__ == '__main__':
         plt.legend()
         plt.savefig(f'results_hyperparameters/{test_hyperparameter.lower()}_distribution.png')
         plt.close()
-        
+
         # Clear results for the next hyperparameter test
         all_results.clear()
