@@ -8,11 +8,11 @@ from collections import defaultdict
 
 
 # ====================LOAD SCHEDULE INFORMATION====================
-games_json = open('schedule_info/nhl_all_games.json')
-ALL_GAMES = json.load(games_json)
+with open('schedule_info/nhl_all_games.json') as games_json:
+    ALL_GAMES = json.load(games_json)
 
-locations_json = open('schedule_info/arena_locations.json')
-ARENA_LOCATIONS = json.load(locations_json)
+with open('schedule_info/arena_locations.json') as locations_json:
+    ARENA_LOCATIONS = json.load(locations_json)
 
 
 # ====================DATE CONSTANTS====================
@@ -51,7 +51,7 @@ def calc_distance(current_location: tuple[float, float], traveling_location: tup
     lat_two, lon_two = traveling_location
 
     # Earth's radius (in km)
-    radius = 6371 
+    radius = 6371
 
     # Calculate the distance with the Haversine formula
     lat_distance = math.radians(lat_two - lat_one)
@@ -70,7 +70,7 @@ def make_distance_matrix(arena_locations: dict = ARENA_LOCATIONS) -> list[list[f
     """
     Create a matrix of distances between all team arenas.
 
-    :param arena_locations: dictionay mapping team abbreviations to latitude and longitude coordinates
+    :param arena_locations: dictionary mapping team abbreviations to latitude and longitude coordinates
     :return distance_matrix: a list of lists where distance_matrix[i][j] is the distance between team i and team j in kilometers
     """
 
@@ -116,7 +116,10 @@ def team_schedule_fitness(team_schedule: list[tuple[str, str]], distance_matrix:
         day_gap = (next_day - current_day).days - 1
 
         # Apply penalties based on how many rest days are between games
-        if day_gap == 0:
+        if day_gap < 0:
+            # A negative gap means the team would be scheduled to play twice on the same day, which is impossible
+            game_rest_fitness += 100_000
+        elif day_gap == 0:
             game_rest_fitness += 1
         elif day_gap == 1:
             game_rest_fitness +=  0
@@ -167,7 +170,7 @@ def team_schedule_fitness(team_schedule: list[tuple[str, str]], distance_matrix:
     # Minimizing travel distance
     travel_fitness = 0
     for game_one_index in range(len(team_schedule) - 1):
-            
+
         # Determine location 1 (the home city of the current game)
         current_game_home_team = team_schedule[game_one_index][0]
         if current_game_home_team == team_list[team_index]:
@@ -175,27 +178,25 @@ def team_schedule_fitness(team_schedule: list[tuple[str, str]], distance_matrix:
         else:
             location_one = team_list.index(current_game_home_team)
 
-        # Find the next game entry
+        # Get the next game entry
         game_two_index = game_one_index + 1
-        while game_two_index < len(team_schedule) and not team_schedule[game_two_index]:
-            game_two_index += 1
-            
+
         # If the end of the schedule is reached, break
         if game_two_index >= len(team_schedule):
             break
-            
+
         # Determine location 2 (the home city of the next game)
         next_game_home_team = team_schedule[game_two_index][0]
         if next_game_home_team == team_list[team_index]:
             location_two = team_index
         else:
             location_two = team_list.index(next_game_home_team)
-            
+
         # Add the travel distance of the two locations from the distance matrix
         travel_fitness += distance_matrix[location_one][location_two]
 
 
-    # Calculate total team fiitness
+    # Calculate total team fitness
     travel_weight = 0.01
     fitness = game_rest_fitness + home_away_fitness + (travel_fitness * travel_weight)
 
@@ -372,8 +373,9 @@ def tournament_selection(population: list[list[list[int]]], population_fitness, 
     for _ in range(population_size):
         indices = random.sample(range(population_size), k=tournament_size)
         winner_index = min(indices, key=lambda index: population_fitness[index])
-        mating_pool.append(population[winner_index][:])
-        
+        # Deep copy the winning schedule's days so mutating the mating pool later can't alias/corrupt the original population's schedules
+        mating_pool.append([day[:] for day in population[winner_index]])
+
     return mating_pool
 
 
@@ -411,7 +413,7 @@ def apply_order_crossover(schedule_one: list[list[int]], schedule_two: list[list
 
     schedule_len = len(flat_schedule_one)
 
-    # Pick the crossover slice 
+    # Pick the crossover slice
     max_attempts = 5
     slice_start = -1
     slice_end = -1
@@ -420,11 +422,11 @@ def apply_order_crossover(schedule_one: list[list[int]], schedule_two: list[list
     for attempt in range(max_attempts):
         # Randomly pick slice indices
         slice_start, slice_end = sorted(random.sample(range(schedule_len), 2))
-        
+
         # Determine the range of days covered by the game slice
         start_day_index = game_to_day_map[slice_start]
         end_day_index = game_to_day_map[slice_end]
-        
+
         # Check if any day in the range is an invalid date
         range_is_invalid = False
         for current_day_index in range(start_day_index, end_day_index + 1):
@@ -432,7 +434,7 @@ def apply_order_crossover(schedule_one: list[list[int]], schedule_two: list[list
             if current_date in invalid_dates:
                 range_is_invalid = True
                 break
-        
+
         if not range_is_invalid:
             valid_slice_found = True
             break
@@ -448,27 +450,27 @@ def apply_order_crossover(schedule_one: list[list[int]], schedule_two: list[list
     # Copy the slice from schedule one
     schedule_one_slice = flat_schedule_one[slice_start:slice_end+1]
     flat_child_schedule[slice_start:slice_end+1] = schedule_one_slice
-    # Identify games that were not in the chedule one slice
+    # Identify games that were not in the schedule one slice
     schedule_one_slice_games = set(schedule_one_slice)
     # Get the games from schedule two in order, excluding those in the slice of schedule one
-    schedule_two_fillers = (g for g in flat_schedule_two if g not in schedule_one_slice_games)
+    schedule_two_fillers = (game for game in flat_schedule_two if game not in schedule_one_slice_games)
     # Find the positions in the child schedule that need filling
-    fill_positions = (i for i, g in enumerate(flat_child_schedule) if g is None)
+    fill_positions = (i for i, game in enumerate(flat_child_schedule) if game is None)
     # Fill the remaining positions using schedule two's games in relative order
-    for i, g in zip(fill_positions, schedule_two_fillers):
-        flat_child_schedule[i] = g
+    for i, game in zip(fill_positions, schedule_two_fillers):
+        flat_child_schedule[i] = game
 
     # Reconstruct the schedule as the list of lists
     child_schedule = []
     flat_index = 0
-    
+
     # Use the structure (day lengths) of schedule_one
     for day_list in schedule_one:
         day_len = len(day_list)
         # Extract the slice of the flat child schedule for this day
         day_games = flat_child_schedule[flat_index : flat_index + day_len]
         # Filter out any remaining None values
-        child_schedule.append([g for g in day_games if g is not None])
+        child_schedule.append([game for game in day_games if game is not None])
         flat_index += day_len
 
     return child_schedule
@@ -487,14 +489,14 @@ def game_swap_mutation(schedule: list[list[int]], games: dict = ALL_GAMES, start
     """
     schedule_len = len(schedule)
 
-    # If mutation is not sucessful after 5 attmepts, abort
+    # If mutation is not successful after 5 attempts, abort
     max_attempts = 5
     attempts = 0
     mutation_successful = False
     while attempts < max_attempts and not mutation_successful:
         # Select two random days indicies
         day_one_index, day_two_index = random.sample(range(schedule_len), 2)
-        
+
         # Check if both days are valid dates
         date_one = get_date_from_index(day_one_index, start_date)
         date_two = get_date_from_index(day_two_index, start_date)
@@ -505,21 +507,21 @@ def game_swap_mutation(schedule: list[list[int]], games: dict = ALL_GAMES, start
         # Get the list of games from each day
         day_one_games = schedule[day_one_index]
         day_two_games = schedule[day_two_index]
-        
+
         # If day 1 has games and day 2 has games, move one game from day 1 to 2 and one game from 2 to 1
         if day_one_games and day_two_games:
             game_one_index = random.randrange(len(day_one_games))
             game_two_index = random.randrange(len(day_two_games))
             game_one_id = day_one_games[game_one_index]
             game_two_id = day_two_games[game_two_index]
-            
+
             home_one, away_one = get_game_teams(game_one_id)
             home_two, away_two = get_game_teams(game_two_id)
-            
+
             # Get the teams playing on each day (excluding the teams that are playing in the game that would be swapped out)
             teams_one_remaining = get_day_teams(day_one_games, game_to_exclude=game_one_id, games=games)
             teams_two_remaining = get_day_teams(day_two_games, game_to_exclude=game_two_id, games=games)
-            
+
             # Check to make sure no team is playing twice in a day after the swap
             valid_day_one = home_two not in teams_one_remaining and away_two not in teams_one_remaining
             valid_day_two = home_one not in teams_two_remaining and away_one not in teams_two_remaining
@@ -529,17 +531,17 @@ def game_swap_mutation(schedule: list[list[int]], games: dict = ALL_GAMES, start
                 schedule[day_one_index][game_one_index] = game_two_id
                 schedule[day_two_index][game_two_index] = game_one_id
                 mutation_successful = True
-        
+
         # If day 1 has games and day 2 does not, move one game from day 1 to 2
         elif day_one_games and not day_two_games:
             game_one_index = random.randrange(len(day_one_games))
             game_one_id = day_one_games[game_one_index]
-            
+
             # Perform the swap
             game_id = schedule[day_one_index].pop(game_one_index)
             schedule[day_two_index].append(game_id)
             mutation_successful = True
-        
+
         # If day 1 has no games and day 2 does, move one game from day 2 to 1
         elif not day_one_games and day_two_games:
             game_two_index = random.randrange(len(day_two_games))
@@ -569,24 +571,24 @@ def day_swap_mutation(schedule: list[list[int]], start_date: datetime.date = STA
     """
     schedule_len = len(schedule)
 
-    # If mutation is not sucessful after 5 attmepts, abort
+    # If mutation is not successful after 5 attempts, abort
     max_attempts = 5
     attempt = 0
     mutation_successful = False
     while attempt < max_attempts and not mutation_successful:
         # Choose two random day indices to swap
         day_one_index, day_two_index = random.sample(range(schedule_len), 2)
-        
+
         # Get the actual datetime dates for the chosen indices
         date_one = get_date_from_index(day_one_index, start_date)
         date_two = get_date_from_index(day_two_index, start_date)
-        
+
         # Check if both days are valid dates
         if date_one not in invalid_dates and date_two not in invalid_dates:
             # Swap the days
             schedule[day_one_index], schedule[day_two_index] = schedule[day_two_index], schedule[day_one_index]
             mutation_successful = True
-        # If at least one of the days is an incvalid date, select new dates
+        # If at least one of the days is an invalid date, select new dates
         else:
             attempt += 1
 
@@ -605,14 +607,14 @@ def day_inversion_mutation(schedule: list[list[int]], start_date: datetime.date 
     """
     schedule_len = len(schedule)
 
-    # If mutation is not sucessful after 5 attmepts, abort
+    # If mutation is not successful after 5 attempts, abort
     max_attempts = 5
     attempt = 0
     mutation_successful = False
     while attempt < max_attempts and not mutation_successful:
         # Choose two random day indices for the range
         start_day_index, end_day_index = sorted(random.sample(range(schedule_len), 2))
-        
+
         # Check if the range contains any invalid dates
         range_is_invalid = False
         for day_index in range(start_day_index, end_day_index + 1):
@@ -620,7 +622,7 @@ def day_inversion_mutation(schedule: list[list[int]], start_date: datetime.date 
             if current_date in invalid_dates:
                 range_is_invalid = True
                 break
-        
+
         # If the range does not include invalid days
         if not range_is_invalid:
             # Invert the range order
@@ -637,7 +639,7 @@ def apply_mutation(schedule: list[list[int]], no_day_inversion) -> list[list[int
     """
     Applies one of three mutations to a schedule.
     Randomly picks one of a game swap mutation, a day swap mutation, or a day inversion mutation to a schedule.
-    
+
     :param schedule: the schedule to apply the mutation to
     :param no_day_inversion: a boolean value that signifies if a day inversion is one of the mutations
     :return schedule: the schedule resulting from the mutation
@@ -664,14 +666,14 @@ def apply_mutation(schedule: list[list[int]], no_day_inversion) -> list[list[int
 def apply_elitism(mating_pool: list[list[list[int]]], mating_pool_fitnesses: list[float], best_chromosome: list[list[int]]) -> list[list[list[int]]]:
     """
     Replace the worst schedule in mating pool with the given best schedule from the previous population.
-    
+
     :param mating_pool: the mating pool which is a list of schedules
-    :param mating_pool_fitnesses: a list of coresponding fitness values to each schedule in the mating pool
+    :param mating_pool_fitnesses: a list of corresponding fitness values to each schedule in the mating pool
     :param best_chromosome: the best schedule of the previous generation
     :return mating_pool: the mating pool with the worst schedule replaced by the best schedule
     """
-    # Find the worst schedule and replace it with the given best schedule
+    # Find the worst schedule and replace it with a deep copy of the given best schedule (so later mutations can't alias/corrupt it)
     worst_index = mating_pool_fitnesses.index(max(mating_pool_fitnesses))
-    mating_pool[worst_index] = best_chromosome
+    mating_pool[worst_index] = [day[:] for day in best_chromosome]
 
     return mating_pool
