@@ -1,6 +1,7 @@
 
 # Imports
 import json
+import os
 from collections import defaultdict
 
 
@@ -64,7 +65,7 @@ if __name__ == '__main__':
         home_div = TEAMS[home_team]
         home_conf = next(conference for conference, divisions in CONFERENCES.items() if home_div in divisions)
 
-        # Generate games against same conference, same division teams (3 home games against 7 other teams)
+        # Generate games against same conference, same division teams (2 home games against 7 other teams)
         for away_team in division_to_teams[home_div]:
             if away_team != home_team:
                 # Add games
@@ -95,5 +96,6 @@ if __name__ == '__main__':
 
     # Save JSON file of all games
     games_dict = {str(i): [home, away] for i, (home, away) in enumerate(games_list)}
+    os.makedirs('schedule_info', exist_ok=True)
     with open('schedule_info/nhl_all_games.json', 'w') as f:
         json.dump(games_dict, f, indent=2)
