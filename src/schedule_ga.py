@@ -1,6 +1,7 @@
 
 # Imports
 import json
+import os
 import random
 import time
 import utils
@@ -23,7 +24,7 @@ UPDATE_FREQUENCY = 100
 
 
 # ====================THE GENETIC ALGORITHM====================
-def nhl_schedule_ga(hyperparameters: dict = HYPERPARAMETERS, update_frquency: int = UPDATE_FREQUENCY, hyper_prarameter_testing: bool = False):
+def nhl_schedule_ga(hyperparameters: dict = HYPERPARAMETERS, update_frequency: int = UPDATE_FREQUENCY, hyperparameter_testing: bool = False):
     """
     A genetic algorithm to create an optimal NHL schedule.
     The chromosome representation is a list of lists of integers, where each inner list represents a day in the season and the integers represent the game IDs scheduled for that day.
@@ -31,11 +32,10 @@ def nhl_schedule_ga(hyperparameters: dict = HYPERPARAMETERS, update_frquency: in
     The genetic algorithm uses tournament selection, order crossover, several mutations, and elitism, and terminates when one of two termination criteria are met.
 
     :param hyperparameters: a dictionary of hyperparameter values to use in the genetic algorithm
-    :param update_frquency: an integer indicating at what interval of generations to print an update statement
-    :param hyper_prarameter_testing: a boolean indicating if hyperparameters are being tested (do not save results if so)
-    :return best_fitness: a float of the best fitness found 
+    :param update_frequency: an integer indicating at what interval of generations to print an update statement
+    :param hyperparameter_testing: a boolean indicating if hyperparameters are being tested (do not save results if so)
+    :return best_fitness: a float of the best fitness found
     :return best_schedule: a list of list of ints representing the best schedule found
-
     """
     # GA start time (to track runtime)
     start_time = time.time()
@@ -120,8 +120,9 @@ def nhl_schedule_ga(hyperparameters: dict = HYPERPARAMETERS, update_frquency: in
         # Apply order crossover on pairs of chromosomes in the mating pool
         for i in range(0, population_size, 2):
             if random.random() < current_crossover_rate:
-                mating_pool[i] = utils.apply_order_crossover(mating_pool[i], mating_pool[i+1])
-                mating_pool[i+1] = utils.apply_order_crossover(mating_pool[i+1], mating_pool[i])
+                parent_one, parent_two = mating_pool[i], mating_pool[i+1]
+                mating_pool[i] = utils.apply_order_crossover(parent_one, parent_two)
+                mating_pool[i+1] = utils.apply_order_crossover(parent_two, parent_one)
 
 
         # ====================MUTATION===================
@@ -153,7 +154,7 @@ def nhl_schedule_ga(hyperparameters: dict = HYPERPARAMETERS, update_frquency: in
             global_best_fitness = current_best_fitness
             global_best_schedule = current_best_schedule
 
-        
+
         # ====================BOOK KEEPING====================
         best_schedule = global_best_schedule
         best_fitness = global_best_fitness
@@ -165,8 +166,8 @@ def nhl_schedule_ga(hyperparameters: dict = HYPERPARAMETERS, update_frquency: in
 
 
         # ====================PRINT GENERATION PROGRESS====================
-        if update_frquency != 0:
-            if generation % update_frquency == 0 or generation == 1:
+        if update_frequency != 0:
+            if generation % update_frequency == 0 or generation == 1:
                 # Calculate current runtime
                 elapsed = time.time() - start_time
                 print(f'Generation: {generation}\nBest fitness = {best_fitness:.2f}\nRuntime = {elapsed:.2f}s\n')
@@ -182,7 +183,9 @@ def nhl_schedule_ga(hyperparameters: dict = HYPERPARAMETERS, update_frquency: in
           f'\nTotal runtime = {total_runtime:.2f}s ({(total_runtime/60):.2f}m)\n')
 
     # Only save results if not testing hyperparameters
-    if not hyper_prarameter_testing:
+    if not hyperparameter_testing:
+        os.makedirs('results_genetic_algorithm', exist_ok=True)
+
         # Save the best_schedule to a JSON file
         with open('results_genetic_algorithm/best_schedule.json', 'w') as f:
             json.dump(best_schedule, f, indent=2)
@@ -202,7 +205,7 @@ def nhl_schedule_ga(hyperparameters: dict = HYPERPARAMETERS, update_frquency: in
         sorted_team_fitnesses_dict = dict(sorted_team_fitnesses)
         with open('results_genetic_algorithm/team_fitnesses.json', 'w') as f:
             json.dump(sorted_team_fitnesses_dict, f, indent=2)
-    
+
     return best_fitness, best_schedule
 
 
