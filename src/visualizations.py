@@ -9,7 +9,7 @@ import datetime
 
 # ====================LOAD SCHEDULE INFORMATION====================
 # Load the saved best schedule
-with open('results_genetic_algorithm/best_schedule.json') as best_schedule_json:
+with open('genetic_algorithm_results/best_schedule.json') as best_schedule_json:
     BEST_SCHEDULE = json.load(best_schedule_json)
 
 # Load the game IDs
@@ -17,7 +17,7 @@ with open('schedule_info/nhl_all_games.json') as games_json:
     ALL_GAMES = json.load(games_json)
 
 # Get fitness data
-with open('results_genetic_algorithm/fitness_results.json') as fitness_json:
+with open('genetic_algorithm_results/fitness_results.json') as fitness_json:
     fitness_data = json.load(fitness_json)
 GENERATION_BEST_FITNESS = fitness_data['generation_best_fitnesses']
 GENERATION_AVERAGE_FITNESS = fitness_data['generation_average_fitnesses']
@@ -74,8 +74,8 @@ def plot_best_vs_average_fitness(generation_best_fitness: list[float], generatio
     plt.ylabel('Fitness')
     plt.title(f'Genetic Algorithm Fitness Over Generations (Starting at Generation {generation_to_start_at})')
     plt.legend()
-    os.makedirs('results_genetic_algorithm', exist_ok=True)
-    plt.savefig(f'results_genetic_algorithm/fitness_over_generations_{generation_to_start_at}.png',  bbox_inches='tight')
+    os.makedirs('genetic_algorithm_results', exist_ok=True)
+    plt.savefig(f'genetic_algorithm_results/fitness_over_generations_{generation_to_start_at}.png',  bbox_inches='tight')
     plt.close()
 
 

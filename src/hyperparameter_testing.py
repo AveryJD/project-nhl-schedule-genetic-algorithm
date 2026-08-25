@@ -52,7 +52,7 @@ def run_multiple(hyperparameters: dict, n_runs: int = STATISTICAL_RUNS):
 
 # ========================================RUN THE HYPERPARAMETER TEST========================================
 if __name__ == '__main__':
-    os.makedirs('results_hyperparameters', exist_ok=True)
+    os.makedirs('hyperparameters_results', exist_ok=True)
 
     all_results = {}
 
@@ -96,7 +96,7 @@ if __name__ == '__main__':
         plt.xlabel('Best Fitness')
         plt.ylabel('Density')
         plt.legend()
-        plt.savefig(f'results_hyperparameters/{test_hyperparameter.lower()}_distribution.png')
+        plt.savefig(f'hyperparameters_results/{test_hyperparameter.lower()}_distribution.png')
         plt.close()
 
         # Clear results for the next hyperparameter test

@@ -82,7 +82,7 @@ python src/hyperparameter_testing.py
 
 This script will run the genetic algorithm STATISTICAL_RUNS times for each hyperparameter value and plot the resulting best-fitness distributions.
 
-Generated distribution plots will be saved to the results_hyperparameters folder.
+Generated distribution plots will be saved to the hyperparameters_results folder.
 
 Note: This step can take a long time, since it reruns the full genetic algorithm many times over. I recomend reducing the GENERATIONS constant to a much lower value than what would be appropriate for the full algorithm run.
 
@@ -114,7 +114,7 @@ This script will:
 * Track the best and average fitness of every generation
 * Stop once the generation limit is reached (set with the GENERATIONS constant), or once the best fitness stagnates for so many generations (set with the STAGNANT_GENERATIONS constant)
 
-Results will be saved to the results_genetic_algorithm folder: the best schedule found (best_schedule.json), the fitness history (fitness_results.json), and each team's individual fitness score (team_fitnesses.json).
+Results will be saved to the genetic_algorithm_results folder: the best schedule found (best_schedule.json), the fitness history (fitness_results.json), and each team's individual fitness score (team_fitnesses.json).
 
 Note: Depending on the hyperparameters used, running the full genetic algorithm can take quite a while.
 
@@ -132,7 +132,7 @@ This script will:
 * Generate a calendar visualization of the entire league's schedule
 * Generate a calendar visualization of each individual team's schedule
 
-Generated fitness plots will be saved to the results_genetic_algorithm folder, and calendar visualizations will be saved to the calendars folder.
+Generated fitness plots will be saved to the genetic_algorithm_results folder, and calendar visualizations will be saved to the calendars folder.
 
 
 ## License

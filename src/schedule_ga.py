@@ -13,8 +13,8 @@ HYPERPARAMETERS = {
     'GENERATIONS': 10_000,
     'STAGNANT_GENERATIONS': 1_000,
 
-    'TOURNAMENT_SIZE': 3,
-    'CROSSOVER_RATE': 0.70,
+    'TOURNAMENT_SIZE': 5,
+    'CROSSOVER_RATE': 0.40,
     'MUTATION_RATE': 0.20,
     'ELITISM': True,
 }
@@ -184,10 +184,10 @@ def nhl_schedule_ga(hyperparameters: dict = HYPERPARAMETERS, update_frequency: i
 
     # Only save results if not testing hyperparameters
     if not hyperparameter_testing:
-        os.makedirs('results_genetic_algorithm', exist_ok=True)
+        os.makedirs('genetic_algorithm_results', exist_ok=True)
 
         # Save the best_schedule to a JSON file
-        with open('results_genetic_algorithm/best_schedule.json', 'w') as f:
+        with open('genetic_algorithm_results/best_schedule.json', 'w') as f:
             json.dump(best_schedule, f, indent=2)
 
         # Save the fitness values to a JSON file
@@ -197,13 +197,13 @@ def nhl_schedule_ga(hyperparameters: dict = HYPERPARAMETERS, update_frequency: i
             'generation_best_fitnesses': generation_best_fitnesses,
             'generation_average_fitnesses': generation_average_fitnesses
         }
-        with open('results_genetic_algorithm/fitness_results.json', 'w') as f:
+        with open('genetic_algorithm_results/fitness_results.json', 'w') as f:
             json.dump(results, f, indent=2)
 
         # Save each team's fitness values from the best schedule to a JSON file
         sorted_team_fitnesses = sorted(team_fitnesses.items(), key=lambda item: item[1])
         sorted_team_fitnesses_dict = dict(sorted_team_fitnesses)
-        with open('results_genetic_algorithm/team_fitnesses.json', 'w') as f:
+        with open('genetic_algorithm_results/team_fitnesses.json', 'w') as f:
             json.dump(sorted_team_fitnesses_dict, f, indent=2)
 
     return best_fitness, best_schedule
