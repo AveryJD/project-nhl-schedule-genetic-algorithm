@@ -4,6 +4,7 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 import scipy.stats as stats
+from concurrent.futures import ProcessPoolExecutor, as_completed
 from schedule_ga import nhl_schedule_ga
 from constants import DEFAULT_HYPERPARAMETERS, TEST_HYPERPARAMETERS, STATISTICAL_RUNS
 
@@ -11,19 +12,28 @@ from constants import DEFAULT_HYPERPARAMETERS, TEST_HYPERPARAMETERS, STATISTICAL
 # ========================================HELPER FUNCTIONS========================================
 def run_multiple(hyperparameters: dict, n_runs: int = STATISTICAL_RUNS):
     """
-    Run the NHL schedule GA multiple times and get each run's best fitness values.
+    Run the NHL schedule GA multiple times in parallel and get each run's best fitness values.
+    Since each run is completely independent of the others, they're distributed across worker processes instead of run one after another.
 
     :param hyperparameters: a dictionary containing the values of the hyperparameters for the GA
     :param n_runs: an integer of the number of times to run the GA
     :return results: a list of the best fitness values from each run
     """
+
+    # Number of GA runs to execute in parallel (defaults to all available CPU cores)
+    max_workers = os.cpu_count()
+
     results = []
-    # Run the GA n times
-    for i in range(n_runs):
-        print(f'Run {i+1}/{n_runs}')
-        # Get the best fitness value of the run and add it to the list
-        best_fitness, _ = nhl_schedule_ga(hyperparameters, update_frequency=0, hyperparameter_testing=True)
-        results.append(best_fitness)
+    # Run the GA n times, distributed across worker processes
+    with ProcessPoolExecutor(max_workers=max_workers) as executor:
+        futures = [executor.submit(nhl_schedule_ga, hyperparameters, 0, True) for _ in range(n_runs)]
+
+        # Collect results as each run finishes (not necessarily in the order they were submitted)
+        for i, future in enumerate(as_completed(futures)):
+            best_fitness, _ = future.result()
+            print(f'Run {i+1}/{n_runs} complete')
+            results.append(best_fitness)
+
     return results
 
 
