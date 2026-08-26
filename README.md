@@ -65,15 +65,17 @@ Generated game IDs will be saved to schedule_info/nhl_all_games.json.
 ### Step 2: Test Hyperparameters (Optional)
 This step reruns the genetic algorithm many times across a range of values for each hyperparameter, to compare their effect on the best fitness found.
 
-Open src/hyperparameter_testing.py and adjust the values to test if desired:
+Open src/constants.py and adjust the values to test if desired:
 ```python
 TEST_HYPERPARAMETERS = {
-    'TOURNAMENT_SIZE': [2, 3, 4, 5],
-    'CROSSOVER_RATE': [0.40, 0.50, 0.60, 0.70],
-    'MUTATION_RATE': [0.10, 0.20, 0.30, 0.40],
-    'ELITISM': [True, False]
+    'TOURNAMENT_SIZE':[2, 3, 4, 5],
+    'CROSSOVER_RATE': [0.30, 0.40, 0.50, 0.60, 0.70],
+    'MUTATION_RATE': [0.10, 0.20, 0.30, 0.40, 0.50, 0.60],
+    'ELITISM': [True, False],
 }
 ```
+
+GA runs in this step are run in parallel across your available CPU cores, so testing multiple hyperparameters won't take as long as running everything sequentially would, but it may still take a while for all of the runs.
 
 Execute the following script from the project root:
 ```bash
@@ -90,15 +92,15 @@ Note: This step can take a long time, since it reruns the full genetic algorithm
 ### Step 3: Run the Genetic Algorithm
 This step runs the genetic algorithm to search for an optimized schedule.
 
-Open src/schedule_ga.py and adjust the hyperparameters if desired:
+Open src/constants.py and adjust the hyperparameters if desired:
 ```python
 HYPERPARAMETERS = {
     'POPULATION_SIZE': 500,
     'GENERATIONS': 10_000,
     'STAGNANT_GENERATIONS': 1_000,
     'TOURNAMENT_SIZE': 3,
-    'CROSSOVER_RATE': 0.70,
-    'MUTATION_RATE': 0.20,
+    'CROSSOVER_RATE': 0.40,
+    'MUTATION_RATE': 0.40,
     'ELITISM': True,
 }
 ```
