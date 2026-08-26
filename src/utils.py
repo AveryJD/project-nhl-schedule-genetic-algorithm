@@ -76,7 +76,7 @@ def make_distance_matrix(arena_locations: dict = ARENA_LOCATIONS) -> list[list[f
 
 
 # ====================FITNESS FUNCTIONS====================
-def team_schedule_fitness(team_schedule: list[tuple[str, str]], distance_matrix: list[list[float]], team_index: int, team_list: list[str]) -> float:
+def team_schedule_fitness(team_schedule: list[tuple[str, str]], distance_matrix: list[list[float]], team_index: int, team_list: list[str], team_to_index: dict[str, int]) -> float:
     """
     Calculates a fitness score for a single team's schedule.
     Penalties related to rest/game day balance, home/away balance, and travel distance are added and then each component is weighted.
@@ -86,10 +86,14 @@ def team_schedule_fitness(team_schedule: list[tuple[str, str]], distance_matrix:
     :param distance_matrix: a matrix containing the travel distance between all NHL arenas
     :param team_index: the index of the current team in the `team_list` (used to locate its city in the distance matrix)
     :param team_list: a list of all NHL team abbreviations
+    :param team_to_index: a dictionary mapping each team abbreviation to its index in `team_list`/`distance_matrix`, so locations can be looked up in O(1) instead of repeatedly scanning `team_list`
     :return fitness: a float representing the total weighted fitness score for the team.
     """
 
     fitness_weights = FITNESS_WEIGHTS
+
+    # Hard constraint violations (impossible schedules) always count at full strength, regardless of fitness_weights
+    hard_violation_fitness = 0
 
     # Optimizing rest time
     game_rest_fitness = 0
@@ -100,8 +104,8 @@ def team_schedule_fitness(team_schedule: list[tuple[str, str]], distance_matrix:
 
         # Apply penalties based on how many rest days are between games
         if day_gap < 0:
-            # A negative gap means the team would be scheduled to play twice on the same day, which is impossible
-            game_rest_fitness += 100_000
+            # Negative gap means the team is double-booked on the same day (impossible schedule)
+            hard_violation_fitness += 100_000
         elif day_gap == 0:
             game_rest_fitness += 1
         elif day_gap == 1:
@@ -118,7 +122,7 @@ def team_schedule_fitness(team_schedule: list[tuple[str, str]], distance_matrix:
         day_one, day_two, day_three = team_schedule[i][2], team_schedule[i+1][2], team_schedule[i+2][2]
         # If three consecutive games only have day gaps of one, it means back-to-back-to-back is occuring
         if (day_two - day_one).days == 1 and (day_three - day_two).days == 1:
-            game_rest_fitness += 100_000
+            hard_violation_fitness += 100_000
 
 
     # Optimizing home/away streak balance
@@ -159,7 +163,7 @@ def team_schedule_fitness(team_schedule: list[tuple[str, str]], distance_matrix:
         if current_game_home_team == team_list[team_index]:
             location_one = team_index
         else:
-            location_one = team_list.index(current_game_home_team)
+            location_one = team_to_index[current_game_home_team]
 
         # Get the next game entry
         game_two_index = game_one_index + 1
@@ -173,15 +177,19 @@ def team_schedule_fitness(team_schedule: list[tuple[str, str]], distance_matrix:
         if next_game_home_team == team_list[team_index]:
             location_two = team_index
         else:
-            location_two = team_list.index(next_game_home_team)
+            location_two = team_to_index[next_game_home_team]
 
         # Add the travel distance of the two locations from the distance matrix
         travel_fitness += distance_matrix[location_one][location_two]
 
 
-    # Calculate total team fitness
-    travel_weight = 0.01
-    fitness = game_rest_fitness + home_away_fitness + (travel_fitness * travel_weight)
+    # Calculate total team fitness: hard violations always count at full weight, the soft components are scaled by fitness_weights
+    fitness = (
+        hard_violation_fitness
+        + (game_rest_fitness * fitness_weights['REST_WEIGHT'])
+        + (home_away_fitness * fitness_weights['HOME_AWAY_WEIGHT'])
+        + (travel_fitness * fitness_weights['TRAVEL_WEIGHT'])
+    )
 
     return fitness
 
@@ -200,6 +208,8 @@ def total_schedule_fitness(schedule: list[list[int]], distance_matrix: list[list
     """
 
     team_list = list(arena_locations.keys())
+    # Build the team to index lookup once so team_schedule_fitness doesn't have to repeatedly scan team_list
+    team_to_index = {team: index for index, team in enumerate(team_list)}
 
     # Build each team's individual schedules
     team_schedules = defaultdict(list)
@@ -214,9 +224,8 @@ def total_schedule_fitness(schedule: list[list[int]], distance_matrix: list[list
     total_fitness = 0
     each_team_fitness = {}
     # For every team's schedule, add it's fitness to the total and to a dictionary
-    for team in team_list:
-        index = team_list.index(team)
-        current_team_schedule_fitness = team_schedule_fitness(team_schedules[team], distance_matrix, index, team_list)
+    for index, team in enumerate(team_list):
+        current_team_schedule_fitness = team_schedule_fitness(team_schedules[team], distance_matrix, index, team_list, team_to_index)
         total_fitness += current_team_schedule_fitness
         each_team_fitness[team] = round(current_team_schedule_fitness, 2)
 
@@ -228,6 +237,7 @@ def evaluate_population(population: list[list[int]], distance_matrix: list[list[
     Evaluate the fitness of each chromosome in the population.
 
     :param population: a list of schedule chromosomes
+    :param distance_matrix: a matrix containing the travel distance between all NHL arenas
     :return population_evaluation: a list of each chromosme's fitness
     """
     population_evaluation = []
@@ -362,6 +372,59 @@ def tournament_selection(population: list[list[list[int]]], population_fitness, 
     return mating_pool
 
 
+def repair_same_day_conflicts(schedule: list[list[int]], games: dict = ALL_GAMES, start_date: datetime.date = START_DATE, invalid_dates: set[datetime.date] = INVALID_DATES) -> list[list[int]]:
+    """
+    Repairs a schedule so that no team is scheduled to play more than once on the same day.
+    Any game whose team is already playing that day is pulled out and re-placed on the first (randomly ordered) day where both of its teams are free.
+
+    :param schedule: the schedule to repair (a list of lists of game IDs, one list per day)
+    :param games: a dictionary mapping game_ids to the teams playing in them ([home_team, away_team])
+    :param start_date: a datetime.date object of the schedule's start date
+    :param invalid_dates: a set of datetime.date objects of dates that should not have games scheduled on them
+    :return schedule: the repaired schedule, with every same-day team conflict resolved
+    """
+    schedule_len = len(schedule)
+
+    # Track which teams are already scheduled on each day, keeping the first game seen for a team and displacing any later conflicting game
+    teams_playing = [set() for _ in range(schedule_len)]
+    displaced_games = []
+
+    for day_index, day_games in enumerate(schedule):
+        kept_games = []
+        for game_id in day_games:
+            home_team, away_team = games[str(game_id)]
+            if home_team in teams_playing[day_index] or away_team in teams_playing[day_index]:
+                # One of this game's teams is already playing on this day, so displace the game
+                displaced_games.append(game_id)
+            else:
+                kept_games.append(game_id)
+                teams_playing[day_index].update([home_team, away_team])
+        schedule[day_index] = kept_games
+
+    # Re-place each displaced game on the first (randomly ordered) day where both teams are free and the date is valid
+    for game_id in displaced_games:
+        home_team, away_team = games[str(game_id)]
+
+        day_indices = list(range(schedule_len))
+        random.shuffle(day_indices)
+
+        placed = False
+        for day_id in day_indices:
+            if start_date + datetime.timedelta(days=day_id) in invalid_dates:
+                continue
+            if home_team not in teams_playing[day_id] and away_team not in teams_playing[day_id]:
+                schedule[day_id].append(game_id)
+                teams_playing[day_id].update([home_team, away_team])
+                placed = True
+                break
+
+        # Given how many days and teams are available, this should never happen, but fall back to the first day rather than silently dropping the game
+        if not placed:
+            schedule[0].append(game_id)
+
+    return schedule
+
+
 def apply_order_crossover(schedule_one: list[list[int]], schedule_two: list[list[int]], start_date: datetime.date = START_DATE, invalid_dates: set[datetime.date] = INVALID_DATES) -> list[list[int]]:
     """
     Applies order Crossover to two schedules.
@@ -455,6 +518,9 @@ def apply_order_crossover(schedule_one: list[list[int]], schedule_two: list[list
         # Filter out any remaining None values
         child_schedule.append([game for game in day_games if game is not None])
         flat_index += day_len
+
+    # Repair any same-day team conflicts introduced by recombining the two schedules
+    child_schedule = repair_same_day_conflicts(child_schedule, games=ALL_GAMES, start_date=start_date, invalid_dates=invalid_dates)
 
     return child_schedule
 
