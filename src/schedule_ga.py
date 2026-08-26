@@ -163,9 +163,10 @@ def nhl_schedule_ga(hyperparameters: dict = HYPERPARAMETERS, update_frequency: i
     total_runtime = time.time() - start_time
 
     # Ending print statement
-    print(f'Stopping after {generation} generations'
-          f'\nBest fitness: {best_fitness:.2f}, found at generation {first_stagnation_generation}'
-          f'\nTotal runtime = {total_runtime:.2f}s ({(total_runtime/60):.2f}m)\n')
+    if update_frequency != 0:
+        print(f'Stopping after {generation} generations'
+              f'\nBest fitness: {best_fitness:.2f}, found at generation {first_stagnation_generation}'
+              f'\nTotal runtime = {total_runtime:.2f}s ({(total_runtime/60):.2f}m)\n')
 
     # Only save results if not testing hyperparameters
     if not hyperparameter_testing:
