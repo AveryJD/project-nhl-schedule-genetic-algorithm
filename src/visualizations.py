@@ -5,6 +5,7 @@ import os
 import matplotlib.pyplot as plt
 import calendar
 import datetime
+from constants import START_DATE, END_DATE, INVALID_DATES, ALL_TEAMS
 
 
 # ====================LOAD SCHEDULE INFORMATION====================
@@ -21,33 +22,6 @@ with open('genetic_algorithm_results/fitness_results.json') as fitness_json:
     fitness_data = json.load(fitness_json)
 GENERATION_BEST_FITNESS = fitness_data['generation_best_fitnesses']
 GENERATION_AVERAGE_FITNESS = fitness_data['generation_average_fitnesses']
-
-# List of all NHL team abbreviations
-ALL_TEAMS = ["BOS", "BUF", "DET", "FLA", "MTL", "OTT", "TBL", "TOR",
-             "CAR", "CBJ", "NJD", "NYI", "NYR", "PHI", "PIT", "WSH",
-             "CHI", "COL", "DAL", "MIN", "NSH", "STL", "UTA", "WPG",
-             "ANA", "CGY", "EDM", "LAK", "SJS", "SEA", "VGK", "VAN"]
-
-
-# ====================DATE CONSTANTS====================
-# The schedule's start and end dates
-START_DATE = datetime.date(2026, 10, 7)
-END_DATE = datetime.date(2027, 4, 16)
-
-# Invalid days
-INVALID_DATES = set()
-INVALID_DATES.add(datetime.date(2026, 11, 26))  # American Thanksgiving
-INVALID_DATES.add(datetime.date(2026, 12, 24))  # Christmas Eve
-INVALID_DATES.add(datetime.date(2026, 12, 25))  # Christmas Day
-INVALID_DATES.add(datetime.date(2026, 12, 26))  # Boxing Day
-
-INVALID_DATES.add(datetime.date(2027, 2, 7))    # February bye week
-INVALID_DATES.add(datetime.date(2027, 2, 8))
-INVALID_DATES.add(datetime.date(2027, 2, 9))
-INVALID_DATES.add(datetime.date(2027, 2, 10))
-INVALID_DATES.add(datetime.date(2027, 2, 11))
-INVALID_DATES.add(datetime.date(2027, 2, 12))
-INVALID_DATES.add(datetime.date(2027, 2, 13))
 
 
 # ========================================PLOT BEST VS AVERAGE FITNESSES FUNCTION========================================

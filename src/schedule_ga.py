@@ -5,22 +5,7 @@ import os
 import random
 import time
 import utils
-
-
-# ====================HYPERPARAMETERS====================
-HYPERPARAMETERS = {
-    'POPULATION_SIZE': 500, # Must be even (due to crossover)
-    'GENERATIONS': 10_000,
-    'STAGNANT_GENERATIONS': 1_000,
-
-    'TOURNAMENT_SIZE': 5,
-    'CROSSOVER_RATE': 0.40,
-    'MUTATION_RATE': 0.20,
-    'ELITISM': True,
-}
-
-# The frequency of generations to print progress updates
-UPDATE_FREQUENCY = 100
+from constants import HYPERPARAMETERS, UPDATE_FREQUENCY
 
 
 # ====================THE GENETIC ALGORITHM====================

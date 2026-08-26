@@ -5,6 +5,7 @@ import random
 import json
 import datetime
 from collections import defaultdict
+from constants import START_DATE, END_DATE, INVALID_DATES, FITNESS_WEIGHTS
 
 
 # ====================LOAD SCHEDULE INFORMATION====================
@@ -13,27 +14,6 @@ with open('schedule_info/nhl_all_games.json') as games_json:
 
 with open('schedule_info/arena_locations.json') as locations_json:
     ARENA_LOCATIONS = json.load(locations_json)
-
-
-# ====================DATE CONSTANTS====================
-# Set the start and end date of the schedule
-START_DATE = datetime.date(2026, 10, 7)         # October 7, 2026
-END_DATE = datetime.date(2027, 4, 16)           # April 16, 2027
-
-# Set days that NHL games can not be scheduled on
-INVALID_DATES = set()
-INVALID_DATES.add(datetime.date(2026, 11, 26))  # American Thanksgiving
-INVALID_DATES.add(datetime.date(2026, 12, 24))  # Christmas Eve
-INVALID_DATES.add(datetime.date(2026, 12, 25))  # Christmas Day
-INVALID_DATES.add(datetime.date(2026, 12, 26))  # Boxing Day
-
-INVALID_DATES.add( datetime.date(2027, 2, 7))   # February bye week
-INVALID_DATES.add( datetime.date(2027, 2, 8))
-INVALID_DATES.add( datetime.date(2027, 2, 9))
-INVALID_DATES.add( datetime.date(2027, 2, 10))
-INVALID_DATES.add( datetime.date(2027, 2, 11))
-INVALID_DATES.add( datetime.date(2027, 2, 12))
-INVALID_DATES.add( datetime.date(2027, 2, 13))
 
 
 # ====================DISTANCE FUNCTIONS====================
@@ -108,6 +88,9 @@ def team_schedule_fitness(team_schedule: list[tuple[str, str]], distance_matrix:
     :param team_list: a list of all NHL team abbreviations
     :return fitness: a float representing the total weighted fitness score for the team.
     """
+
+    fitness_weights = FITNESS_WEIGHTS
+
     # Optimizing rest time
     game_rest_fitness = 0
     for i in range(len(team_schedule) - 1):

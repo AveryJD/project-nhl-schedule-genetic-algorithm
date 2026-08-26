@@ -3,51 +3,7 @@
 import json
 import os
 from collections import defaultdict
-
-
-# ========================================TEAM CONSTANTS========================================
-TEAMS = {
-    'BOS': 'Atlantic',
-    'BUF': 'Atlantic',
-    'DET': 'Atlantic',
-    'FLA': 'Atlantic',
-    'MTL': 'Atlantic',
-    'OTT': 'Atlantic',
-    'TBL': 'Atlantic',
-    'TOR': 'Atlantic',
-
-    'CAR': 'Metropolitan',
-    'CBJ': 'Metropolitan',
-    'NJD': 'Metropolitan',
-    'NYI': 'Metropolitan',
-    'NYR': 'Metropolitan',
-    'PHI': 'Metropolitan',
-    'PIT': 'Metropolitan',
-    'WSH': 'Metropolitan',
-
-    'CHI': 'Central',
-    'COL': 'Central',
-    'DAL': 'Central',
-    'MIN': 'Central',
-    'NSH': 'Central',
-    'STL': 'Central',
-    'UTA': 'Central',
-    'WPG': 'Central',
-
-    'ANA': 'Pacific',
-    'CGY': 'Pacific',
-    'EDM': 'Pacific',
-    'LAK': 'Pacific',
-    'SJS': 'Pacific',
-    'SEA': 'Pacific',
-    'VAN': 'Pacific',
-    'VGK': 'Pacific'
-}
-
-CONFERENCES = {
-    'Eastern': ['Atlantic', 'Metropolitan'],
-    'Western': ['Central', 'Pacific']
-}
+from constants import TEAMS, CONFERENCES
 
 
 # ========================================GENERATE ALL GAME IDS========================================

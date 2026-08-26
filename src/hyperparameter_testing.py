@@ -5,30 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import scipy.stats as stats
 from schedule_ga import nhl_schedule_ga
-
-
-# ========================================HYPERPARAMETERS========================================
-# Default hyperparameters
-DEFAULT_HYPERPARAMETERS = {
-    'POPULATION_SIZE': 50,
-    'GENERATIONS': 300,
-    'STAGNANT_GENERATIONS': 1000,
-    'TOURNAMENT_SIZE': 2,
-    'CROSSOVER_RATE': 0.50,
-    'MUTATION_RATE': 0.20,
-    'ELITISM': True
-}
-
-# The testing hyperparameters and their values to test
-TEST_HYPERPARAMETERS = {
-    'TOURNAMENT_SIZE':[2, 3, 4, 5],
-    'CROSSOVER_RATE': [0.40, 0.50, 0.60, 0.70],
-    'MUTATION_RATE': [0.10, 0.20, 0.30, 0.40],
-    'ELITISM': [True, False]
-}
-
-# Number of runs per hyperparameter value
-STATISTICAL_RUNS = 50
+from constants import DEFAULT_HYPERPARAMETERS, TEST_HYPERPARAMETERS, STATISTICAL_RUNS
 
 
 # ========================================HELPER FUNCTIONS========================================
