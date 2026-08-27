@@ -96,7 +96,7 @@ Open src/constants.py and adjust the hyperparameters if desired:
 ```python
 HYPERPARAMETERS = {
     'POPULATION_SIZE': 500,
-    'GENERATIONS': 10_000,
+    'GENERATIONS': 20_000,
     'STAGNANT_GENERATIONS': 1_000,
     'TOURNAMENT_SIZE': 3,
     'CROSSOVER_RATE': 0.40,
