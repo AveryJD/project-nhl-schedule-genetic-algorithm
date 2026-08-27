@@ -299,6 +299,9 @@ if __name__ == "__main__":
     zoomed_start = max(0, len(GENERATION_BEST_FITNESS) - 1000)
     if zoomed_start > 0:
         plot_best_vs_average_fitness(GENERATION_BEST_FITNESS, GENERATION_AVERAGE_FITNESS, zoomed_start)
+    # Also plot a view starting at generation 2500, if the run was long enough
+    if len(GENERATION_BEST_FITNESS) > 2500:
+        plot_best_vs_average_fitness(GENERATION_BEST_FITNESS, GENERATION_AVERAGE_FITNESS, 2500)
 
     # Create a calendar for the entire schedule
     league_schedule_calendar_visualization()
