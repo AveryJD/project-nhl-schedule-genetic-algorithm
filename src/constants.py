@@ -7,7 +7,7 @@ import datetime
 # Hyperparameters used for a full production run (see schedule_ga.py)
 HYPERPARAMETERS = {
     'POPULATION_SIZE': 500, # Must be even (due to crossover)
-    'GENERATIONS': 10_000,
+    'GENERATIONS': 20_000,
     'STAGNANT_GENERATIONS': 1_000,
 
     'TOURNAMENT_SIZE': 3,
